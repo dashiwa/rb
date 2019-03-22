@@ -1,0 +1,201 @@
+
+.countdown-rtl {
+    direction: rtl;
+}
+.countdown-holding span {
+    color: #888;
+}
+.countdown-row {
+    clear: both;
+    width: 100%;
+    padding: 0px 2px;
+    text-align: center;
+}
+.countdown-section{position: relative}
+.countdown-section:nth-child(2):after,.countdown-section:nth-child(1):after,.countdown-section:nth-child(3):after {
+    content: ":";
+    font-size: 55px;
+    position: absolute;
+    top: -24px;
+    left: 138px;
+}
+
+.countdown-show1 .countdown-section {
+    width: 98%;
+}
+.countdown-show2 .countdown-section {
+    width: 48%;
+}
+.countdown-show3 .countdown-section {
+    width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+    width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+    width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+    width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+    width: 14%;
+}
+.countdown-section {
+    display: block;
+    float: left;
+    font-size: 75%;
+    text-align: center;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.main-menu .navbar-nav a {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: normal;
+
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff !important;
+}
+
+.main-menu {
+    background-color: #C4C4C4;;
+}
+
+.tickets {
+    width: 135px;
+    height: 49px;
+    order: 2;
+    border-radius: unset;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.tickets-middle {
+    width: 174px;
+    height: 54px;
+    border-radius: unset;
+}
+
+.brand {
+    background-color: #C4C4C4;;
+}
+
+.msg {
+    font-family: Gotham Pro;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.msg-1 {
+    font-size: 36px;
+    line-height: normal;
+}
+
+.msg-2 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.msg-3 {
+    font-size: 24px;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.brand-middle {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-middle .img-brand {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.brand-middle .img-brand {
+    position: absolute;
+    left: -20%;
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+
+.counter{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 126px;
+}
+
+.program-title{
+    font-family: Gotham Pro;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.table-title{
+    font-family: Gotham Pro;
+    font-size: 32px;
+    line-height: 48px;
+}

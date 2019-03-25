@@ -2,17 +2,23 @@
 .countdown-rtl {
     direction: rtl;
 }
+
 .countdown-holding span {
     color: #888;
 }
+
 .countdown-row {
     clear: both;
     width: 100%;
     padding: 0px 2px;
     text-align: center;
 }
-.countdown-section{position: relative}
-.countdown-section:nth-child(2):after,.countdown-section:nth-child(1):after,.countdown-section:nth-child(3):after {
+
+.countdown-section {
+    position: relative
+}
+
+.countdown-section:nth-child(2):after, .countdown-section:nth-child(1):after, .countdown-section:nth-child(3):after {
     content: ":";
     font-size: 55px;
     position: absolute;
@@ -23,43 +29,50 @@
 .countdown-show1 .countdown-section {
     width: 98%;
 }
+
 .countdown-show2 .countdown-section {
     width: 48%;
 }
+
 .countdown-show3 .countdown-section {
     width: 32.5%;
 }
+
 .countdown-show4 .countdown-section {
     width: 24.5%;
 }
+
 .countdown-show5 .countdown-section {
     width: 19.5%;
 }
+
 .countdown-show6 .countdown-section {
     width: 16.25%;
 }
+
 .countdown-show7 .countdown-section {
     width: 14%;
 }
+
 .countdown-section {
     display: block;
     float: left;
     font-size: 75%;
     text-align: center;
 }
+
 .countdown-amount {
     font-size: 200%;
 }
+
 .countdown-period {
     display: block;
 }
+
 .countdown-descr {
     display: block;
     width: 100%;
 }
-
-
-
 
 :root {
     --jumbotron-padding-y: 3rem;
@@ -179,8 +192,7 @@ footer p {
     font-weight: bolder;
 }
 
-
-.counter{
+.counter {
     font-family: Gothic A1;
     font-style: normal;
     font-weight: 500;
@@ -188,14 +200,183 @@ footer p {
     line-height: 126px;
 }
 
-.program-title{
+.program-title {
     font-family: Gotham Pro;
     font-size: 36px;
     line-height: 48px;
+    margin-bottom: 30px;
 }
 
-.table-title{
+.table-title {
     font-family: Gotham Pro;
     font-size: 32px;
     line-height: 48px;
+    margin: 20px 0;
+}
+
+.middle-bottom-container {
+    background: #E5E5E5;
+}
+
+.title-pl {
+    font-family: Gotham Pro;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 0 30px 30px;
+    padding-top: 50px;
+}
+
+.desc-pl {
+    font-family: Gotham Pro;
+    font-size: 18px;
+    line-height: 36px;
+    margin-left: 30px;
+}
+
+.tabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+}
+
+.tabs ul li {
+    height: 73px;
+}
+
+.tabs ul li:hover {
+    background: #C4C4C4;
+}
+
+.tabs ul a {
+    padding-left: 33px;
+    font-family: Gotham Pro;
+    font-size: 24px;
+    color: #000000;
+    line-height: 70px;
+    text-decoration-color: #0b2e13;
+}
+
+.img-brand-middle ul.img-list {
+    list-style: none
+}
+
+.img-brand-middle ul.img-list img {
+    width: 100%;
+}
+
+.img-brand-middle ul.img-list li {
+    position: relative;
+}
+
+.img-brand-middle ul.img-list li.first img {
+    filter: brightness(45%);
+}
+
+.img-brand-middle ul.img-list li span.first {
+    position: absolute;
+    top: 64px;
+    right: 268px;
+    font-size: 25px;
+}
+
+.img-brand-middle ul.img-list li span.first .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+.img-brand-middle ul.img-list li span.first .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    position: absolute;
+    color: #FFFFFF;
+    width: 200px;
+}
+
+.img-brand-middle ul.img-list li span.second {
+    position: absolute;
+    top: 180px;
+    left: 49px;
+    font-size: 25px;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li span.second .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+.img-brand-middle ul.img-list li span.third {
+    position: absolute;
+    bottom: 230px;
+    right: 17px;
+    font-size: 25px;
+    width: 307px;
+}
+
+.img-brand-middle ul.img-list li span.third .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+
+    color: #FFFFFF;
+}
+
+.img-brand-middle ul.img-list li span.fourth {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 25px;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li span.fourth .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+.img-brand-middle ul.img-list li span.fourth .desc {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: white;
+}
+
+.img-brand-middle ul.img-list li span.fift{
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li span.fift .desc{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+
+    color: #FFFFFF;
 }

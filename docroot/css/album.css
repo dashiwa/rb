@@ -444,7 +444,7 @@ footer p {
     line-height: normal;
 }
 
-.img-brand-middle ul.img-list li.third span.first{
+.img-brand-middle ul.img-list li.third span.first {
     position: absolute;
     top: 30px;
     right: 87px;
@@ -459,7 +459,7 @@ footer p {
 }
 
 .img-brand-middle ul.img-list li.third span.first .marker,
-.img-brand-middle ul.img-list li.third span.second .marker{
+.img-brand-middle ul.img-list li.third span.second .marker {
     font-family: Gothic A1;
     font-style: normal;
     font-weight: bold;
@@ -490,7 +490,7 @@ footer p {
 }
 
 .img-brand-middle ul.img-list li.third span.first .desc,
-.img-brand-middle ul.img-list li.third span.second .desc{
+.img-brand-middle ul.img-list li.third span.second .desc {
     font-family: Gothic A1;
     font-style: normal;
     font-weight: normal;
@@ -505,4 +505,25 @@ footer p {
     opacity: 0.5;
 }
 
+.img-brand-middle ul.img-list li.third span.third {
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+    background: black;
+    padding: 10px;
+
+}
+
+.img-brand-middle ul.img-list li.third span.third .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+
+}
 

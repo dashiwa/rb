@@ -74,6 +74,8 @@
     width: 100%;
 }
 
+/** REFACTOR **/
+
 :root {
     --jumbotron-padding-y: 3rem;
 }
@@ -248,6 +250,9 @@ footer p {
     background: #C4C4C4;
 }
 
+/*********************MIDDLE CONTENT**********************/
+
+/***********TABS**********/
 .tabs ul a {
     padding-left: 33px;
     font-family: Gotham Pro;
@@ -267,40 +272,78 @@ footer p {
 
 .img-brand-middle ul.img-list li {
     position: relative;
+    display: none;
 }
 
-.img-brand-middle ul.img-list li.first img {
+.img-brand-middle ul.img-list li.active {
+    display: block;
+}
+
+.img-brand-middle ul.img-list li.first img, .img-brand-middle ul.img-list li.second img {
     filter: brightness(45%);
 }
 
-.img-brand-middle ul.img-list li span.first {
+/*************FIRST IMAGE***************/
+.img-brand-middle ul.img-list li.first span.first {
     position: absolute;
-    top: 64px;
-    right: 268px;
+    top: 41px;
+    right: 110px;
     font-size: 25px;
 }
 
-.img-brand-middle ul.img-list li span.first .title {
+.img-brand-middle ul.img-list li span {
     font-family: Gothic A1;
     font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
     line-height: normal;
-    color: #FFFFFF;
+    color: white;
 }
 
-.img-brand-middle ul.img-list li span.first .desc {
-    font-family: Gothic A1;
-    font-style: normal;
+.img-brand-middle ul.img-list li.first span.first .title,
+.img-brand-middle ul.img-list li.first span.second .title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.img-brand-middle ul.img-list li.first span.first .desc {
     font-weight: 500;
     font-size: 18px;
-    line-height: normal;
     position: absolute;
-    color: #FFFFFF;
     width: 200px;
 }
 
-.img-brand-middle ul.img-list li span.second {
+.img-brand-middle ul.img-list li.first span.second {
+    position: absolute;
+    top: 162px;
+    left: 103px;
+    font-size: 25px;
+}
+
+.img-brand-middle ul.img-list li.first span.second .desc {
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    width: 200px;
+    top: -24px;
+    left: -3px;
+}
+
+.img-brand-middle ul.img-list li.second span.first {
+    position: absolute;
+    top: 68px;
+    right: 236px;
+}
+
+.img-brand-middle ul.img-list li.second span.first .title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.img-brand-middle ul.img-list li.second span.first .desc {
+    position: absolute;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li.second span.second {
     position: absolute;
     top: 180px;
     left: 49px;
@@ -308,16 +351,20 @@ footer p {
     width: 250px;
 }
 
-.img-brand-middle ul.img-list li span.second .desc {
-    font-family: Gothic A1;
-    font-style: normal;
+.img-brand-middle ul.img-list li.first span.second .desc,
+.img-brand-middle ul.img-list li.second span.second .desc {
     font-weight: 500;
     font-size: 18px;
-    line-height: normal;
-    color: #FFFFFF;
 }
 
-.img-brand-middle ul.img-list li span.third {
+.img-brand-middle ul.img-list li.first span.third {
+    position: absolute;
+    bottom: 175px;
+    right: 150px;
+    font-size: 25px;
+}
+
+.img-brand-middle ul.img-list li.second span.third {
     position: absolute;
     bottom: 230px;
     right: 17px;
@@ -325,17 +372,35 @@ footer p {
     width: 307px;
 }
 
-.img-brand-middle ul.img-list li span.third .desc {
+.img-brand-middle ul.img-list li.first span.third .title {
     font-family: Gothic A1;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 60px;
     line-height: normal;
-
-    color: #FFFFFF;
+    color: #FFFFFF
 }
 
-.img-brand-middle ul.img-list li span.fourth {
+.img-brand-middle ul.img-list li.first span.third .desc {
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li.second span.third {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.img-brand-middle ul.img-list li.first span.fourth {
+    position: absolute;
+    bottom: 45px;
+    left: 100px;
+    font-size: 25px;
+}
+
+.img-brand-middle ul.img-list li.second span.fourth {
     position: absolute;
     bottom: 100px;
     left: 50px;
@@ -343,40 +408,101 @@ footer p {
     width: 250px;
 }
 
-.img-brand-middle ul.img-list li span.fourth .title {
-    font-family: Gothic A1;
-    font-style: normal;
+.img-brand-middle ul.img-list li.first span.fourth .title {
     font-weight: bold;
     font-size: 60px;
     line-height: normal;
-    color: #FFFFFF;
 }
 
-.img-brand-middle ul.img-list li span.fourth .desc {
+.img-brand-middle ul.img-list li.second span.fourth .title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.img-brand-middle ul.img-list li.first span.fourth .desc,
+.img-brand-middle ul.img-list li.second span.fourth .desc {
     position: absolute;
     left: 0px;
     top: -30px;
-    font-family: Gothic A1;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: normal;
-    color: white;
 }
 
-.img-brand-middle ul.img-list li span.fift{
+.img-brand-middle ul.img-list li.first span.fift,
+.img-brand-middle ul.img-list li.second span.fift {
     position: absolute;
     bottom: 100px;
     right: 50px;
     width: 250px;
 }
 
-.img-brand-middle ul.img-list li span.fift .desc{
-    font-family: Gothic A1;
-    font-style: normal;
+.img-brand-middle ul.img-list li.first span.fift .desc,
+.img-brand-middle ul.img-list li.second span.fift .desc {
     font-weight: 500;
     font-size: 18px;
     line-height: normal;
-
-    color: #FFFFFF;
 }
+
+.img-brand-middle ul.img-list li.third span.first{
+    position: absolute;
+    top: 30px;
+    right: 87px;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li.third span.second {
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    width: 250px;
+}
+
+.img-brand-middle ul.img-list li.third span.first .marker,
+.img-brand-middle ul.img-list li.third span.second .marker{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: normal;
+    color: #000000;
+    padding: 10px;
+    background: white;
+    opacity: 0.7;
+}
+
+.img-brand-middle ul.img-list li.third span.first .title,
+.img-brand-middle ul.img-list li.third span.second .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    color: #000000;
+    position: absolute;
+    left: 49px;
+    top: -9px;
+    background: white;
+    display: block;
+    width: 200px;
+    height: 60px;
+    padding: 7px 0 0 10px;
+}
+
+.img-brand-middle ul.img-list li.third span.first .desc,
+.img-brand-middle ul.img-list li.third span.second .desc{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+    background: white;
+    position: absolute;
+    z-index: 10;
+    bottom: 4px;
+    left: 59px;
+    opacity: 0.5;
+}
+
+

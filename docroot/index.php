@@ -395,19 +395,46 @@
                     реконструкция
                 </div>
 
-
                 <div class="tabs">
                     <ul>
-                        <li><a href="#">Зрителям</a></li>
-                        <li><a href="#">Спортсменам</a></li>
-                        <li><a href="#">Схема проезда</a></li>
+                        <li class="first"><a href="#">Зрителям</a></li>
+                        <li class="second"><a href="#">Спортсменам</a></li>
+                        <li class="third"><a href="#">Схема проезда</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="img-brand-middle">
                     <ul class="img-list">
-                        <li class="first">
+
+                        <li class="first active">
+
+                            <img src="img/arena_b.png">
+
+                            <span class="first">
+                                <span class="title">350</span>
+                                <span class="desc">Парковочных мест</span>
+                            </span>
+
+                            <span class="second">
+                                 <span class="title">22 246 мест</span>
+                                 <span class="desc">Общая вместимость</span>
+                            </span>
+
+                            <span class="third">
+                                 <span class="title">58</span>
+                                 <span class="desc">точек пунктов питания</span>
+                            </span>
+
+                            <span class="fourth">
+                                 <span class="title">80% мест</span>
+                                 <span class="desc">Навес перекрывает</span>
+                            </span>
+
+                        </li>
+
+                        <li class="second">
+
                             <img src="img/arena_b.png">
 
                             <span class="first">
@@ -419,17 +446,14 @@
                                  <span class="desc">Секторы для толкания ядра; метания копья, диска и молота</span>
                             </span>
 
-
                             <span class="third">
                                  <span class="desc">Секторы для тройного прыжка, а также прыжков в длину, в высоту и с шестом;</span>
                             </span>
-
 
                             <span class="fourth">
                                  <span class="title">Mondo</span>
                                  <span class="desc">Покрытие</span>
                             </span>
-
 
                             <span class="fift">
                                  <span class="desc">Яма для бега «стипль-чез»</span>
@@ -438,9 +462,29 @@
 
                         </li>
 
-                        <li class="second"><img src="img/arena_b.png"></li>
+                        <li class="third">
 
-                        <li class="third"><img src="img/oct_b.png"></li>
+                            <img src="img/oct_b.png">
+
+                            <span class="first">
+                                <span class="marker">M</span>
+                                <span class="title">Первомайская</span>
+                                <span class="desc">Станция метро</span>
+                            </span>
+
+                            <span class="second">
+                                 <span class="marker">M</span>
+                                 <span class="title">Октябрьская</span>
+                                 <span class="desc">Станция метро</span>
+                            </span>
+
+                            <span class="third">
+                                 <span class="desc">Проложить маршрут</span>
+                            </span>
+
+
+
+                        </li>
                     </ul>
                 </div>
             </div>

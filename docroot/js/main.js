@@ -23,3 +23,5 @@ $( ".tabs li.third" ).mouseenter(function() {
     second.hide();
     third.show();
 });
+
+$('.single-item').slick({dots: true,arrows:false});

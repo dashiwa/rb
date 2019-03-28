@@ -527,3 +527,103 @@ footer p {
 
 }
 
+/************************ BOTTOM - TOP ********/
+.bottom-top-container .middle-desc {
+
+}
+
+.bottom-top-container .first .top {
+
+}
+
+.bottom-top-container .first .top .title {
+    font-family: Gotham Pro;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.bottom-top-container .first .top .desc {
+    font-family: Gotham Pro;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/** First slide**/
+.bottom-top-container .middle-desc .top {
+ margin-top: 7%;
+}
+
+.bottom-top-container .img-brand-bottom{
+    position: absolute;
+}
+.bottom-top-container img {
+    opacity: 0.3;
+    width:100%;
+
+}
+
+.bottom-top-container .middle-desc .top .title {
+    font-family: Gotham Pro;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.bottom-top-container .middle-desc .top .desc {
+    font-family: Gotham Pro;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+}
+.bottom-top-container .middle-desc .top .desc p{
+    margin: 0;
+}
+
+.bottom-top-container .single-item .middle ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-top-container .single-item .middle ul li {
+    padding: 5px;
+}
+
+.bottom-top-container .single-item .middle {
+
+}
+
+.bottom-top-container .single-item .middle ul li .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 126px;
+    color: #000000;
+}
+@media (min-width: 768px) {
+    .bottom-top-container .single-item .middle ul li .title {
+        font-family: Gothic A1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 126px;
+        color: #000000;
+    }
+    .bottom-top-container .middle-desc .top .desc{
+        font-size: 12px;
+    }
+    .bottom-top-container .middle-desc .top {
+        margin-top: 1%;
+    }
+}
+
+.bottom-top-container .single-item .middle ul li .desc {
+    display: block;
+}

@@ -1,6 +1,18 @@
+.container {
+    max-width: 1440px;
+}
 
 .countdown-rtl {
     direction: rtl;
+}
+
+.navbar-nav {
+    margin-left: 68px;
+    margin-top: 15px;
+}
+
+.msg-wrapper {
+    margin-left: 10px;
 }
 
 .countdown-holding span {
@@ -124,7 +136,15 @@ footer p {
 }
 
 .brand {
-    background-color: #C4C4C4;;
+    background-color: #C4C4C4;
+    padding-left: 116px;
+    border-radius: unset;
+}
+
+.card-brand-top {
+    width: 198px;
+    height: 168px;
+    background: #515151;
 }
 
 .msg {
@@ -165,7 +185,6 @@ footer p {
 
 .brand-middle .img-brand {
     position: absolute;
-    left: -20%;
 }
 
 .strong {
@@ -203,7 +222,7 @@ footer p {
     font-family: Gotham Pro;
     font-size: 36px;
     line-height: 48px;
-    margin: 0 0 30px 30px;
+    margin: 0 0 30px 86px;
     padding-top: 50px;
 }
 
@@ -211,7 +230,11 @@ footer p {
     font-family: Gotham Pro;
     font-size: 18px;
     line-height: 36px;
-    margin-left: 30px;
+    margin-left: 86px;
+}
+
+.tabs {
+    margin-left: 50px;
 }
 
 .tabs ul {
@@ -556,7 +579,7 @@ footer p {
 .bottom-top-container .middle-desc .top .desc {
     font-family: Gotham Pro;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
     color: #000000;
 }
 
@@ -566,7 +589,7 @@ footer p {
 
 .bottom-top-container .single-item .middle ul {
     list-style: none;
-    margin: 0;
+    margin: 140px 0 0 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -595,12 +618,12 @@ footer p {
         font-style: normal;
         font-weight: 500;
         font-size: 50px;
-        line-height: 126px;
+        line-height: 57px;
         color: #000000;
     }
 
     .bottom-top-container .middle-desc .top .desc {
-        font-size: 12px;
+        /*font-size: 12px;*/
     }
 
     .bottom-top-container .middle-desc .top {
@@ -693,7 +716,12 @@ table tr:hover {
     margin: auto;
 }
 
-.footer-bottom-container .title {
+.footer-bottom-container {
+    background: #E5E5E5;
+    padding-top: 51px;
+}
+
+.title {
     font-family: Gothic A1;
     font-style: normal;
     font-weight: 900;
@@ -713,7 +741,7 @@ table tr:hover {
     color: #000000;
 }
 
-.footer-bottom-container .desc p{
+.footer-bottom-container .desc p {
     padding: 0;
     margin: 0;
 }

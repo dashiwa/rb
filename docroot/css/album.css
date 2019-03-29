@@ -12,6 +12,8 @@
     width: 100%;
     padding: 0px 2px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .countdown-section {
@@ -20,38 +22,14 @@
 
 .countdown-section:nth-child(2):after, .countdown-section:nth-child(1):after, .countdown-section:nth-child(3):after {
     content: ":";
-    font-size: 55px;
+    font-size: 40px;
     position: absolute;
-    top: -24px;
-    left: 138px;
+    top: -26%;
+    left: 125%;
 }
 
-.countdown-show1 .countdown-section {
-    width: 98%;
-}
-
-.countdown-show2 .countdown-section {
-    width: 48%;
-}
-
-.countdown-show3 .countdown-section {
-    width: 32.5%;
-}
-
-.countdown-show4 .countdown-section {
-    width: 24.5%;
-}
-
-.countdown-show5 .countdown-section {
-    width: 19.5%;
-}
-
-.countdown-show6 .countdown-section {
-    width: 16.25%;
-}
-
-.countdown-show7 .countdown-section {
-    width: 14%;
+#defaultCountdown {
+    padding-left: 0;
 }
 
 .countdown-section {
@@ -218,6 +196,7 @@ footer p {
 
 .middle-bottom-container {
     background: #E5E5E5;
+    background-clip: content-box;
 }
 
 .title-pl {
@@ -529,7 +508,7 @@ footer p {
 
 /************************ BOTTOM - TOP ********/
 .bottom-top-container .middle-desc {
-
+    margin-top: 10%;
 }
 
 .bottom-top-container .first .top {
@@ -553,15 +532,16 @@ footer p {
 
 /** First slide**/
 .bottom-top-container .middle-desc .top {
- margin-top: 7%;
+    margin-top: 7%;
 }
 
-.bottom-top-container .img-brand-bottom{
+.bottom-top-container .img-brand-bottom {
     position: absolute;
 }
+
 .bottom-top-container img {
     opacity: 0.3;
-    width:100%;
+    width: 100%;
 
 }
 
@@ -576,10 +556,11 @@ footer p {
 .bottom-top-container .middle-desc .top .desc {
     font-family: Gotham Pro;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 30px;
     color: #000000;
 }
-.bottom-top-container .middle-desc .top .desc p{
+
+.bottom-top-container .middle-desc .top .desc p {
     margin: 0;
 }
 
@@ -596,7 +577,7 @@ footer p {
 }
 
 .bottom-top-container .single-item .middle {
-
+    margin-bottom: 150px;
 }
 
 .bottom-top-container .single-item .middle ul li .title {
@@ -607,6 +588,7 @@ footer p {
     line-height: 126px;
     color: #000000;
 }
+
 @media (min-width: 768px) {
     .bottom-top-container .single-item .middle ul li .title {
         font-family: Gothic A1;
@@ -616,9 +598,11 @@ footer p {
         line-height: 126px;
         color: #000000;
     }
-    .bottom-top-container .middle-desc .top .desc{
+
+    .bottom-top-container .middle-desc .top .desc {
         font-size: 12px;
     }
+
     .bottom-top-container .middle-desc .top {
         margin-top: 1%;
     }
@@ -626,4 +610,110 @@ footer p {
 
 .bottom-top-container .single-item .middle ul li .desc {
     display: block;
+}
+
+.bottom-middle-container img, .bottom-bottom-container img, .footer-top-container img {
+    width: 100%;
+}
+
+table tr:hover {
+    background: gray;
+}
+
+.footer-top-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer-top-container .img-brand img {
+    height: 500px;
+
+}
+
+.footer-top-container .footer-brand {
+    position: absolute;
+    top: 20%;
+}
+
+.footer-top-container .footer-brand .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-top-container .footer-brand .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.footer-top-container .footer-brand .button {
+    margin-top: 30px;
+}
+
+.footer-middle-container {
+    margin-top: 50px;
+}
+
+.footer-middle-container .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+
+    color: #000000;
+}
+
+.footer-middle-container .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.footer-middle-container iframe {
+    width: 100%;
+    height: 610px;
+}
+
+.footer-middle-container .youtube {
+    text-align: center;
+    margin: auto;
+}
+
+.footer-bottom-container .title {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+    margin-top: 30px;
+    color: #000000;
+
+}
+
+.footer-bottom-container .desc {
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.footer-bottom-container .desc p{
+    padding: 0;
+    margin: 0;
 }

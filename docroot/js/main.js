@@ -24,4 +24,4 @@ $( ".tabs li.third" ).mouseenter(function() {
     third.show();
 });
 
-$('.single-item').slick({dots: true,arrows:false});
+$('.single-item').slick({dots: true,arrows:true});

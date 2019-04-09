@@ -1,0 +1,63 @@
+/*
+Error: Undefined mixin 'font-face'.
+        on line 1 of /var/www/docroot/sass/fonts.scss, in `font-face'
+        from line 1 of /var/www/docroot/sass/fonts.scss
+
+1: @include font-face('Gotham Pro',font-files('GothaProReg.woff'));
+2: @include font-face('Gotham Pro Black',font-files('GothaProBla.woff'));
+3: @include font-face('Gotham Pro Light',font-files('GothaProLig.woff'));
+4: @include font-face('Gotham Pro Medium',font-files('GothaProMed.woff'));
+5: @include font-face('Gotham Pro Light Italic',font-files('GothaProLigIta.woff'));
+6: @include font-face('Gotham Pro Bold',font-files('GothaProBol.woff'));
+
+Backtrace:
+/var/www/docroot/sass/fonts.scss:1:in `font-face'
+/var/www/docroot/sass/fonts.scss:1
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:98:in `with_mixin'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/var/www/docroot/.bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/var/www/docroot/.bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/var/www/docroot/.bundle/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/www/docroot/.bundle/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/www/docroot/.bundle/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/www/docroot/.bundle/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/var/www/docroot/.bundle/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/var/www/docroot/.bundle/bin/compass:22:in `load'
+/var/www/docroot/.bundle/bin/compass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'font-face'.\A         on line 1 of /var/www/docroot/sass/fonts.scss, in `font-face'\A         from line 1 of /var/www/docroot/sass/fonts.scss\A \A 1: @include font-face('Gotham Pro',font-files('GothaProReg.woff'));\A 2: @include font-face('Gotham Pro Black',font-files('GothaProBla.woff'));\A 3: @include font-face('Gotham Pro Light',font-files('GothaProLig.woff'));\A 4: @include font-face('Gotham Pro Medium',font-files('GothaProMed.woff'));\A 5: @include font-face('Gotham Pro Light Italic',font-files('GothaProLigIta.woff'));\A 6: @include font-face('Gotham Pro Bold',font-files('GothaProBol.woff'));"; }

@@ -1,0 +1,73 @@
+/* line 1, ../sass/countdown.scss */
+.countdown-rtl {
+  direction: rtl;
+}
+
+/* line 5, ../sass/countdown.scss */
+.navbar-nav {
+  margin-left: 68px;
+  margin-top: 15px;
+}
+
+/* line 10, ../sass/countdown.scss */
+.msg-wrapper {
+  margin-left: 10px;
+}
+
+/* line 14, ../sass/countdown.scss */
+.countdown-holding span {
+  color: #888;
+}
+
+/* line 18, ../sass/countdown.scss */
+.countdown-row {
+  clear: both;
+  width: 100%;
+  padding: 0px 2px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 27, ../sass/countdown.scss */
+.countdown-section {
+  position: relative;
+}
+
+/* line 31, ../sass/countdown.scss */
+.countdown-section:nth-child(2):after, .countdown-section:nth-child(1):after, .countdown-section:nth-child(3):after {
+  content: ":";
+  font-size: 40px;
+  position: absolute;
+  top: -26%;
+  left: 125%;
+}
+
+/* line 39, ../sass/countdown.scss */
+#defaultCountdown {
+  padding-left: 0;
+}
+
+/* line 43, ../sass/countdown.scss */
+.countdown-section {
+  display: block;
+  float: left;
+  font-size: 75%;
+  text-align: center;
+}
+
+/* line 50, ../sass/countdown.scss */
+.countdown-amount {
+  font-size: 200%;
+}
+
+/* line 54, ../sass/countdown.scss */
+.countdown-period {
+  display: block;
+}
+
+/* line 58, ../sass/countdown.scss */
+.countdown-descr {
+  display: block;
+  width: 100%;
+}

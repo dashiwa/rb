@@ -1,5 +1,14 @@
-.container {
-  max-width: 1220px;
+/******************Global body tag******************************/
+
+body {
+  background: url("../img/back.png");
+}
+
+header {
+  .container {
+    background: url("../img/mid_top.png");
+  }
+
 }
 
 /************************TOP NAVIGATION MENU*************************************/
@@ -10,30 +19,195 @@ $medium_font_size: 16px;
 $medium_line_height: 16px;
 $white_color: #FFFFFF;
 
+.container {
+  max-width: 1220px;
+  position: relative;
 
-.main-menu {
-  background: black;
-  .navbar-nav {
-    a {
-      color: $white_color !important;
-      font-family: $gotham_pro_font_family;
-      font-size: $medium_font_size;
-      letter-spacing: 0.04px;
-      line-height: $medium_line_height;
-      padding: 0 !important;
-      margin-right: 0.5rem;
+  /** LOGO **/
+  .logo {
+    height: 197px;
+    width: 167px;
+    background: url("../img/logo.png") no-repeat;
+    background-position: center;
+
+  }
+  /** END LOGO **/
+
+  /** NAV MENU **/
+  .main-menu {
+
+    .navbar-toggler {
+      margin: auto;
+    }
+    .navbar-nav {
+
+      a {
+        color: $white_color !important;
+        font-family: $gotham_pro_font_family;
+        font-size: $medium_font_size;
+        letter-spacing: 0.04px;
+        line-height: $medium_line_height;
+        padding: 0 !important;
+        margin-right: 2.0rem;
+        height: 35px;
       }
-      a:hover{
+      a:hover {
         border-bottom: $white_color 3px solid;
-
       }
     }
   }
+  /** END NAV MENU **/
 
+  /** LANGUAGE SWITCHER **/
+  .language {
+    position: absolute;
+    right: 39px;
+    top: 19px;
+    ul {
+      display: flex;
+      width: 62px;
+      justify-content: space-between;
+      li {
+        a {
+          font-family: "Gotham Pro";
+          font-size: 18px;
+          letter-spacing: 0.19px;
+          line-height: 17px;
+          color: $white_color;
+        }
+        a.active {
+          color: #A94729;
+        }
+      }
+      li:first-child {
+        border-right: 1px solid $white_color;
+        padding-right: 7px;
+      }
+    }
+  }
+  /** END LANGUAGE SWITCHER **/
 
+  /** MIDDLE HEADER **/
+  .middle-header {
+    .title-month {
+      text-align: center;
+      padding-left: 3%;
+      .title {
+        height: 57px;
+        color: #FFFFFF;
+        font-family: "Gotham Pro";
+        font-size: 64px;
+        line-height: 61px;
+      }
+      .desc {
+        height: 22px;
+        color: #FFFFFF;
+        font-family: "Gotham Pro";
+        font-size: 24px;
+        letter-spacing: 1.18px;
+        line-height: 24px;
+        margin-top: 10px;
+      }
+    }
 
+    .ticket-button {
+      height: 61px;
+      border-radius: 35px;
+      background-color: #C9142E;
+      color: #FFFFFF;
+      font-family: "Gotham Pro";
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.05px;
+      line-height: 55px;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
 
-  /************************END TOP NAVIGATION MENU*************************************/
+    .timer {
+      display: flex;
+      justify-content: space-around;
+
+      .countdown-row {
+        .countdown-section {
+
+          height: 115px;
+          width: 110px;
+          background-color: #D44A18;
+          display: flex;
+          flex-direction: column;
+          float: left;
+          margin-right: 5px;
+          justify-content: center;
+          align-items: center;
+
+          .countdown-amount {
+            height: 41px;
+            width: 55px;
+            color: #FFFFFF;
+            font-family: "Gotham Pro";
+            font-size: 46px;
+            letter-spacing: 0.12px;
+            line-height: 44px;
+          }
+          .countdown-period {
+            height: 12px;
+            width: 42px;
+            color: #FFFFFF;
+            font-family: "Gotham Pro";
+            font-size: 14px;
+            letter-spacing: 0.04px;
+            line-height: 13px;
+            text-align: center;
+            margin-top: 15px;
+          }
+
+        }
+      }
+    }
+  }
+  /**END MIDDLE HEADER **/
+
+  /**BOTTOM TOP**/
+  .bottom-top-header {
+    margin-top: 70px;
+    color: #FFFFFF;
+    font-family: "Gotham Pro";
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 0.06px;
+    line-height: 64px;
+
+  }
+  /** END BOTTOM TOP **/
+
+  /** BOTTOM MIDDLE HEADER **/
+  .bottom-middle-header {
+    margin-top: 100px;
+    padding-left: 2%;
+    height: 230px;
+    .mark {
+      background: url("../img/shape.png");
+      height: 80px;
+      width: 55px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: #FFFFFF;
+      font-family: "Gotham Pro";
+      font-size: 24px;
+      letter-spacing: 0.06px;
+      line-height: 34px;
+      text-transform: uppercase;
+    }
+  }
+  /** END BOTTOM MIDDLE HEADER **/
+
+}
+
+/************************END TOP NAVIGATION MENU*************************************/
 
 /** REFACTOR **/
 
@@ -75,7 +249,6 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
-
 
 .tickets {
   width: 135px;
@@ -615,15 +788,15 @@ table tr:hover {
   top: 20%;
 }
 
-.footer-top-container .footer-brand .title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
+//.footer-top-container .footer-brand .title {
+//  font-family: Gothic A1;
+//  font-style: normal;
+//  font-weight: 900;
+//  font-size: 36px;
+//  line-height: normal;
+//  color: #FFFFFF;
+//  margin-bottom: 20px;
+//}
 
 .footer-top-container .footer-brand .desc {
   font-family: Gothic A1;
@@ -642,15 +815,15 @@ table tr:hover {
   margin-top: 50px;
 }
 
-.footer-middle-container .title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-
-  color: #000000;
-}
+//.footer-middle-container .title {
+//  font-family: Gothic A1;
+//  font-style: normal;
+//  font-weight: 900;
+//  font-size: 36px;
+//  line-height: normal;
+//
+//  color: #000000;
+//}
 
 .footer-middle-container .desc {
   font-family: Gothic A1;
@@ -678,16 +851,16 @@ table tr:hover {
   padding-top: 51px;
 }
 
-.title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-  margin-top: 30px;
-  color: #000000;
-
-}
+//.title {
+//  font-family: Gothic A1;
+//  font-style: normal;
+//  font-weight: 900;
+//  font-size: 36px;
+//  line-height: normal;
+//  margin-top: 30px;
+//  color: #000000;
+//
+//}
 
 .footer-bottom-container .desc {
   font-family: Gothic A1;

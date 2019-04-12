@@ -1,36 +1,206 @@
-/* line 1, ../sass/main.scss */
-.container {
-  max-width: 1220px;
+/******************Global body tag******************************/
+/* line 3, ../sass/main.scss */
+body {
+  background: url("../img/back.png");
+}
+
+/* line 8, ../sass/main.scss */
+header .container {
+  background: url("../img/mid_top.png");
 }
 
 /************************TOP NAVIGATION MENU*************************************/
-/* line 14, ../sass/main.scss */
-.main-menu {
-  background: black;
+/* line 22, ../sass/main.scss */
+.container {
+  max-width: 1220px;
+  position: relative;
+  /** LOGO **/
+  /** END LOGO **/
+  /** NAV MENU **/
+  /** END NAV MENU **/
+  /** LANGUAGE SWITCHER **/
+  /** END LANGUAGE SWITCHER **/
+  /** MIDDLE HEADER **/
+  /**END MIDDLE HEADER **/
+  /**BOTTOM TOP**/
+  /** END BOTTOM TOP **/
+  /** BOTTOM MIDDLE HEADER **/
+  /** END BOTTOM MIDDLE HEADER **/
 }
-/* line 17, ../sass/main.scss */
-.main-menu .navbar-nav a {
+/* line 27, ../sass/main.scss */
+.container .logo {
+  height: 197px;
+  width: 167px;
+  background: url("../img/logo.png") no-repeat;
+  background-position: center;
+}
+/* line 39, ../sass/main.scss */
+.container .main-menu .navbar-toggler {
+  margin: auto;
+}
+/* line 44, ../sass/main.scss */
+.container .main-menu .navbar-nav a {
   color: #FFFFFF !important;
   font-family: "Gotham Pro", Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 0.04px;
   line-height: 16px;
   padding: 0 !important;
-  margin-right: 0.5rem;
+  margin-right: 2.0rem;
+  height: 35px;
 }
-/* line 26, ../sass/main.scss */
-.main-menu .navbar-nav a:hover {
+/* line 54, ../sass/main.scss */
+.container .main-menu .navbar-nav a:hover {
   border-bottom: #FFFFFF 3px solid;
+}
+/* line 62, ../sass/main.scss */
+.container .language {
+  position: absolute;
+  right: 39px;
+  top: 19px;
+}
+/* line 66, ../sass/main.scss */
+.container .language ul {
+  display: flex;
+  width: 62px;
+  justify-content: space-between;
+}
+/* line 71, ../sass/main.scss */
+.container .language ul li a {
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  letter-spacing: 0.19px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+/* line 78, ../sass/main.scss */
+.container .language ul li a.active {
+  color: #A94729;
+}
+/* line 82, ../sass/main.scss */
+.container .language ul li:first-child {
+  border-right: 1px solid #FFFFFF;
+  padding-right: 7px;
+}
+/* line 92, ../sass/main.scss */
+.container .middle-header .title-month {
+  text-align: center;
+  padding-left: 3%;
+}
+/* line 95, ../sass/main.scss */
+.container .middle-header .title-month .title {
+  height: 57px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 64px;
+  line-height: 61px;
+}
+/* line 102, ../sass/main.scss */
+.container .middle-header .title-month .desc {
+  height: 22px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  letter-spacing: 1.18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+/* line 113, ../sass/main.scss */
+.container .middle-header .ticket-button {
+  height: 61px;
+  border-radius: 35px;
+  background-color: #C9142E;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05px;
+  line-height: 55px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+/* line 128, ../sass/main.scss */
+.container .middle-header .timer {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 133, ../sass/main.scss */
+.container .middle-header .timer .countdown-row .countdown-section {
+  height: 115px;
+  width: 110px;
+  background-color: #D44A18;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+/* line 145, ../sass/main.scss */
+.container .middle-header .timer .countdown-row .countdown-section .countdown-amount {
+  height: 41px;
+  width: 55px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 46px;
+  letter-spacing: 0.12px;
+  line-height: 44px;
+}
+/* line 154, ../sass/main.scss */
+.container .middle-header .timer .countdown-row .countdown-section .countdown-period {
+  height: 12px;
+  width: 42px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  letter-spacing: 0.04px;
+  line-height: 13px;
+  text-align: center;
+  margin-top: 15px;
+}
+/* line 173, ../sass/main.scss */
+.container .bottom-top-header {
+  margin-top: 70px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 0.06px;
+  line-height: 64px;
+}
+/* line 186, ../sass/main.scss */
+.container .bottom-middle-header {
+  margin-top: 100px;
+  padding-left: 2%;
+  height: 230px;
+}
+/* line 190, ../sass/main.scss */
+.container .bottom-middle-header .mark {
+  background: url("../img/shape.png");
+  height: 80px;
+  width: 55px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* line 197, ../sass/main.scss */
+.container .bottom-middle-header .desc {
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  letter-spacing: 0.06px;
+  line-height: 34px;
+  text-transform: uppercase;
 }
 
 /************************END TOP NAVIGATION MENU*************************************/
 /** REFACTOR **/
-/* line 40, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 :root {
   --jumbotron-padding-y: 3rem;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -39,39 +209,39 @@
 }
 
 @media (min-width: 768px) {
-  /* line 52, ../sass/main.scss */
+  /* line 226, ../sass/main.scss */
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
   }
 }
-/* line 58, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
-/* line 62, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .jumbotron-heading {
   font-weight: 300;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 .jumbotron .container {
   max-width: 40rem;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 footer p {
   margin-bottom: .25rem;
 }
 
-/* line 80, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 .tickets {
   width: 135px;
   height: 49px;
@@ -81,60 +251,60 @@ footer p {
   line-height: 36px;
 }
 
-/* line 89, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .tickets-middle {
   width: 174px;
   height: 54px;
   border-radius: unset;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .brand {
   background-color: #C4C4C4;
   padding-left: 116px;
   border-radius: unset;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .card-brand-top {
   width: 198px;
   height: 168px;
   background: #515151;
 }
 
-/* line 107, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 .msg {
   font-family: Gotham Pro;
   color: #000000;
   padding: 10px 0;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .msg-1 {
   font-size: 36px;
   line-height: normal;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 .msg-2 {
   font-size: 36px;
   line-height: 48px;
 }
 
-/* line 123, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .msg-3 {
   font-size: 24px;
   line-height: normal;
   padding-bottom: 20px;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .brand-middle {
   position: relative;
   overflow: hidden;
 }
 
-/* line 134, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .brand-middle .img-brand {
   width: 100%;
   height: auto;
@@ -144,17 +314,17 @@ footer p {
   top: 0;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 .brand-middle .img-brand {
   position: absolute;
 }
 
-/* line 147, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .strong {
   font-weight: bolder;
 }
 
-/* line 151, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .counter {
   font-family: Gothic A1;
   font-style: normal;
@@ -163,7 +333,7 @@ footer p {
   line-height: 126px;
 }
 
-/* line 159, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .program-title {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -171,7 +341,7 @@ footer p {
   margin-bottom: 30px;
 }
 
-/* line 166, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 .table-title {
   font-family: Gotham Pro;
   font-size: 32px;
@@ -179,13 +349,13 @@ footer p {
   margin: 20px 0;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .middle-bottom-container {
   background: #E5E5E5;
   background-clip: content-box;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 .title-pl {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -194,7 +364,7 @@ footer p {
   padding-top: 50px;
 }
 
-/* line 186, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .desc-pl {
   font-family: Gotham Pro;
   font-size: 18px;
@@ -202,12 +372,12 @@ footer p {
   margin-left: 86px;
 }
 
-/* line 193, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .tabs {
   margin-left: 50px;
 }
 
-/* line 197, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .tabs ul {
   list-style: none;
   margin: 0;
@@ -215,19 +385,19 @@ footer p {
   margin-top: 38px;
 }
 
-/* line 204, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 .tabs ul li {
   height: 73px;
 }
 
-/* line 208, ../sass/main.scss */
+/* line 381, ../sass/main.scss */
 .tabs ul li:hover {
   background: #C4C4C4;
 }
 
 /*********************MIDDLE CONTENT**********************/
 /***********TABS**********/
-/* line 215, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 .tabs ul a {
   padding-left: 33px;
   font-family: Gotham Pro;
@@ -237,34 +407,34 @@ footer p {
   text-decoration-color: #0b2e13;
 }
 
-/* line 224, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 .img-brand-middle ul.img-list {
   list-style: none;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .img-brand-middle ul.img-list img {
   width: 100%;
 }
 
-/* line 232, ../sass/main.scss */
+/* line 405, ../sass/main.scss */
 .img-brand-middle ul.img-list li {
   position: relative;
   display: none;
 }
 
-/* line 237, ../sass/main.scss */
+/* line 410, ../sass/main.scss */
 .img-brand-middle ul.img-list li.active {
   display: block;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first img, .img-brand-middle ul.img-list li.second img {
   filter: brightness(45%);
 }
 
 /*************FIRST IMAGE***************/
-/* line 246, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.first {
   position: absolute;
   top: 41px;
@@ -272,7 +442,7 @@ footer p {
   font-size: 25px;
 }
 
-/* line 253, ../sass/main.scss */
+/* line 426, ../sass/main.scss */
 .img-brand-middle ul.img-list li span {
   font-family: Gothic A1;
   font-style: normal;
@@ -280,14 +450,14 @@ footer p {
   color: white;
 }
 
-/* line 260, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.first .title,
 .img-brand-middle ul.img-list li.first span.second .title {
   font-weight: bold;
   font-size: 60px;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 439, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.first .desc {
   font-weight: 500;
   font-size: 18px;
@@ -295,7 +465,7 @@ footer p {
   width: 200px;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.second {
   position: absolute;
   top: 162px;
@@ -303,7 +473,7 @@ footer p {
   font-size: 25px;
 }
 
-/* line 280, ../sass/main.scss */
+/* line 453, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.second .desc {
   font-weight: 500;
   font-size: 18px;
@@ -313,26 +483,26 @@ footer p {
   left: -3px;
 }
 
-/* line 289, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.first {
   position: absolute;
   top: 68px;
   right: 236px;
 }
 
-/* line 295, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.first .title {
   font-weight: bold;
   font-size: 60px;
 }
 
-/* line 300, ../sass/main.scss */
+/* line 473, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.first .desc {
   position: absolute;
   width: 250px;
 }
 
-/* line 305, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.second {
   position: absolute;
   top: 180px;
@@ -341,14 +511,14 @@ footer p {
   width: 250px;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 486, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.second .desc,
 .img-brand-middle ul.img-list li.second span.second .desc {
   font-weight: 500;
   font-size: 18px;
 }
 
-/* line 319, ../sass/main.scss */
+/* line 492, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.third {
   position: absolute;
   bottom: 175px;
@@ -356,7 +526,7 @@ footer p {
   font-size: 25px;
 }
 
-/* line 326, ../sass/main.scss */
+/* line 499, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.third {
   position: absolute;
   bottom: 230px;
@@ -365,7 +535,7 @@ footer p {
   width: 307px;
 }
 
-/* line 334, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.third .title {
   font-family: Gothic A1;
   font-style: normal;
@@ -375,7 +545,7 @@ footer p {
   color: #FFFFFF;
 }
 
-/* line 343, ../sass/main.scss */
+/* line 516, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.third .desc {
   font-weight: 500;
   font-size: 18px;
@@ -383,13 +553,13 @@ footer p {
   width: 250px;
 }
 
-/* line 350, ../sass/main.scss */
+/* line 523, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.third {
   font-weight: 500;
   font-size: 18px;
 }
 
-/* line 355, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.fourth {
   position: absolute;
   bottom: 45px;
@@ -397,7 +567,7 @@ footer p {
   font-size: 25px;
 }
 
-/* line 362, ../sass/main.scss */
+/* line 535, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.fourth {
   position: absolute;
   bottom: 100px;
@@ -406,20 +576,20 @@ footer p {
   width: 250px;
 }
 
-/* line 370, ../sass/main.scss */
+/* line 543, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.fourth .title {
   font-weight: bold;
   font-size: 60px;
   line-height: normal;
 }
 
-/* line 376, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 .img-brand-middle ul.img-list li.second span.fourth .title {
   font-weight: bold;
   font-size: 60px;
 }
 
-/* line 381, ../sass/main.scss */
+/* line 554, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.fourth .desc,
 .img-brand-middle ul.img-list li.second span.fourth .desc {
   position: absolute;
@@ -430,7 +600,7 @@ footer p {
   font-size: 18px;
 }
 
-/* line 391, ../sass/main.scss */
+/* line 564, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.fift,
 .img-brand-middle ul.img-list li.second span.fift {
   position: absolute;
@@ -439,7 +609,7 @@ footer p {
   width: 250px;
 }
 
-/* line 399, ../sass/main.scss */
+/* line 572, ../sass/main.scss */
 .img-brand-middle ul.img-list li.first span.fift .desc,
 .img-brand-middle ul.img-list li.second span.fift .desc {
   font-weight: 500;
@@ -447,7 +617,7 @@ footer p {
   line-height: normal;
 }
 
-/* line 406, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.first {
   position: absolute;
   top: 30px;
@@ -455,7 +625,7 @@ footer p {
   width: 250px;
 }
 
-/* line 413, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.second {
   position: absolute;
   bottom: 200px;
@@ -463,7 +633,7 @@ footer p {
   width: 250px;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.first .marker,
 .img-brand-middle ul.img-list li.third span.second .marker {
   font-family: Gothic A1;
@@ -477,7 +647,7 @@ footer p {
   opacity: 0.7;
 }
 
-/* line 433, ../sass/main.scss */
+/* line 606, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.first .title,
 .img-brand-middle ul.img-list li.third span.second .title {
   font-family: Gothic A1;
@@ -496,7 +666,7 @@ footer p {
   padding: 7px 0 0 10px;
 }
 
-/* line 451, ../sass/main.scss */
+/* line 624, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.first .desc,
 .img-brand-middle ul.img-list li.third span.second .desc {
   font-family: Gothic A1;
@@ -513,7 +683,7 @@ footer p {
   opacity: 0.5;
 }
 
-/* line 467, ../sass/main.scss */
+/* line 640, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.third {
   position: absolute;
   bottom: 20px;
@@ -525,7 +695,7 @@ footer p {
   padding: 10px;
 }
 
-/* line 479, ../sass/main.scss */
+/* line 652, ../sass/main.scss */
 .img-brand-middle ul.img-list li.third span.third .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -536,12 +706,12 @@ footer p {
 }
 
 /************************ BOTTOM - TOP ********/
-/* line 490, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 .bottom-top-container .middle-desc {
   margin-top: 10%;
 }
 
-/* line 498, ../sass/main.scss */
+/* line 671, ../sass/main.scss */
 .bottom-top-container .first .top .title {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -550,7 +720,7 @@ footer p {
   margin-bottom: 20px;
 }
 
-/* line 506, ../sass/main.scss */
+/* line 679, ../sass/main.scss */
 .bottom-top-container .first .top .desc {
   font-family: Gotham Pro;
   font-size: 18px;
@@ -559,23 +729,23 @@ footer p {
 }
 
 /** First slide**/
-/* line 514, ../sass/main.scss */
+/* line 687, ../sass/main.scss */
 .bottom-top-container .middle-desc .top {
   margin-top: 7%;
 }
 
-/* line 518, ../sass/main.scss */
+/* line 691, ../sass/main.scss */
 .bottom-top-container .img-brand-bottom {
   position: absolute;
 }
 
-/* line 522, ../sass/main.scss */
+/* line 695, ../sass/main.scss */
 .bottom-top-container img {
   opacity: 0.3;
   width: 100%;
 }
 
-/* line 528, ../sass/main.scss */
+/* line 701, ../sass/main.scss */
 .bottom-top-container .middle-desc .top .title {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -584,7 +754,7 @@ footer p {
   margin-bottom: 20px;
 }
 
-/* line 536, ../sass/main.scss */
+/* line 709, ../sass/main.scss */
 .bottom-top-container .middle-desc .top .desc {
   font-family: Gotham Pro;
   font-size: 18px;
@@ -592,12 +762,12 @@ footer p {
   color: #000000;
 }
 
-/* line 543, ../sass/main.scss */
+/* line 716, ../sass/main.scss */
 .bottom-top-container .middle-desc .top .desc p {
   margin: 0;
 }
 
-/* line 547, ../sass/main.scss */
+/* line 720, ../sass/main.scss */
 .bottom-top-container .single-item .middle ul {
   list-style: none;
   margin: 140px 0 0 0;
@@ -606,17 +776,17 @@ footer p {
   justify-content: space-between;
 }
 
-/* line 555, ../sass/main.scss */
+/* line 728, ../sass/main.scss */
 .bottom-top-container .single-item .middle ul li {
   padding: 5px;
 }
 
-/* line 559, ../sass/main.scss */
+/* line 732, ../sass/main.scss */
 .bottom-top-container .single-item .middle {
   margin-bottom: 150px;
 }
 
-/* line 563, ../sass/main.scss */
+/* line 736, ../sass/main.scss */
 .bottom-top-container .single-item .middle ul li .title {
   font-family: Gothic A1;
   font-style: normal;
@@ -627,7 +797,7 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  /* line 573, ../sass/main.scss */
+  /* line 746, ../sass/main.scss */
   .bottom-top-container .single-item .middle ul li .title {
     font-family: Gothic A1;
     font-style: normal;
@@ -637,60 +807,49 @@ footer p {
     color: #000000;
   }
 
-  /* line 582, ../sass/main.scss */
+  /* line 755, ../sass/main.scss */
   .bottom-top-container .middle-desc .top .desc {
     /*font-size: 12px;*/
   }
 
-  /* line 586, ../sass/main.scss */
+  /* line 759, ../sass/main.scss */
   .bottom-top-container .middle-desc .top {
     margin-top: 1%;
   }
 }
-/* line 591, ../sass/main.scss */
+/* line 764, ../sass/main.scss */
 .bottom-top-container .single-item .middle ul li .desc {
   display: block;
 }
 
-/* line 595, ../sass/main.scss */
+/* line 768, ../sass/main.scss */
 .bottom-middle-container img, .bottom-bottom-container img, .footer-top-container img {
   width: 100%;
 }
 
-/* line 599, ../sass/main.scss */
+/* line 772, ../sass/main.scss */
 table tr:hover {
   background: gray;
 }
 
-/* line 603, ../sass/main.scss */
+/* line 776, ../sass/main.scss */
 .footer-top-container {
   margin-top: 50px;
   position: relative;
 }
 
-/* line 608, ../sass/main.scss */
+/* line 781, ../sass/main.scss */
 .footer-top-container .img-brand img {
   height: 500px;
 }
 
-/* line 613, ../sass/main.scss */
+/* line 786, ../sass/main.scss */
 .footer-top-container .footer-brand {
   position: absolute;
   top: 20%;
 }
 
-/* line 618, ../sass/main.scss */
-.footer-top-container .footer-brand .title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
-
-/* line 628, ../sass/main.scss */
+/* line 801, ../sass/main.scss */
 .footer-top-container .footer-brand .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -700,27 +859,17 @@ table tr:hover {
   color: #FFFFFF;
 }
 
-/* line 637, ../sass/main.scss */
+/* line 810, ../sass/main.scss */
 .footer-top-container .footer-brand .button {
   margin-top: 30px;
 }
 
-/* line 641, ../sass/main.scss */
+/* line 814, ../sass/main.scss */
 .footer-middle-container {
   margin-top: 50px;
 }
 
-/* line 645, ../sass/main.scss */
-.footer-middle-container .title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-  color: #000000;
-}
-
-/* line 655, ../sass/main.scss */
+/* line 828, ../sass/main.scss */
 .footer-middle-container .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -731,36 +880,25 @@ table tr:hover {
   margin-bottom: 30px;
 }
 
-/* line 666, ../sass/main.scss */
+/* line 839, ../sass/main.scss */
 .footer-middle-container iframe {
   width: 100%;
   height: 610px;
 }
 
-/* line 671, ../sass/main.scss */
+/* line 844, ../sass/main.scss */
 .footer-middle-container .youtube {
   text-align: center;
   margin: auto;
 }
 
-/* line 676, ../sass/main.scss */
+/* line 849, ../sass/main.scss */
 .footer-bottom-container {
   background: #E5E5E5;
   padding-top: 51px;
 }
 
-/* line 681, ../sass/main.scss */
-.title {
-  font-family: Gothic A1;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: normal;
-  margin-top: 30px;
-  color: #000000;
-}
-
-/* line 692, ../sass/main.scss */
+/* line 865, ../sass/main.scss */
 .footer-bottom-container .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -770,7 +908,7 @@ table tr:hover {
   color: #000000;
 }
 
-/* line 701, ../sass/main.scss */
+/* line 874, ../sass/main.scss */
 .footer-bottom-container .desc p {
   padding: 0;
   margin: 0;

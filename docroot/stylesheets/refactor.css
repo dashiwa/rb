@@ -1,10 +1,304 @@
+/***********TABS**********/
+/* line 5, ../sass/refactor.scss */
+.img-brand-middle ul.img-list {
+  list-style: none;
+}
+
+/* line 9, ../sass/refactor.scss */
+.img-brand-middle ul.img-list img {
+  width: 100%;
+}
+
+/* line 13, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li {
+  position: relative;
+  display: none;
+}
+
+/* line 18, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.active {
+  display: block;
+}
+
+/*************FIRST IMAGE***************/
+/* line 27, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.first {
+  position: absolute;
+  top: 41px;
+  right: 110px;
+  font-size: 25px;
+}
+
+/* line 34, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li span {
+  font-family: Gothic A1;
+  font-style: normal;
+  line-height: normal;
+  color: white;
+}
+
+/* line 41, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.first .title,
+.img-brand-middle ul.img-list li.first span.second .title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/* line 47, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.first .desc {
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  width: 200px;
+}
+
+/* line 54, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.second {
+  position: absolute;
+  top: 162px;
+  left: 103px;
+  font-size: 25px;
+}
+
+/* line 61, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.second .desc {
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  width: 200px;
+  top: -24px;
+  left: -3px;
+}
+
+/* line 70, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.first {
+  position: absolute;
+  top: 68px;
+  right: 236px;
+}
+
+/* line 76, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.first .title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/* line 81, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.first .desc {
+  position: absolute;
+  width: 250px;
+}
+
+/* line 86, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.second {
+  position: absolute;
+  top: 180px;
+  left: 49px;
+  font-size: 25px;
+  width: 250px;
+}
+
+/* line 94, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.second .desc,
+.img-brand-middle ul.img-list li.second span.second .desc {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* line 100, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.third {
+  position: absolute;
+  bottom: 175px;
+  right: 150px;
+  font-size: 25px;
+}
+
+/* line 107, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.third {
+  position: absolute;
+  bottom: 230px;
+  right: 17px;
+  font-size: 25px;
+  width: 307px;
+}
+
+/* line 115, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.third .title {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+/* line 124, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.third .desc {
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  width: 250px;
+}
+
+/* line 131, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.third {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* line 136, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.fourth {
+  position: absolute;
+  bottom: 45px;
+  left: 100px;
+  font-size: 25px;
+}
+
+/* line 143, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.fourth {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  font-size: 25px;
+  width: 250px;
+}
+
+/* line 151, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.fourth .title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: normal;
+}
+
+/* line 157, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.second span.fourth .title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/* line 162, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.fourth .desc,
+.img-brand-middle ul.img-list li.second span.fourth .desc {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* line 172, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.fift,
+.img-brand-middle ul.img-list li.second span.fift {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  width: 250px;
+}
+
+/* line 180, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.first span.fift .desc,
+.img-brand-middle ul.img-list li.second span.fift .desc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* line 187, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.first {
+  position: absolute;
+  top: 30px;
+  right: 87px;
+  width: 250px;
+}
+
+/* line 194, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.second {
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+  width: 250px;
+}
+
+/* line 201, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.first .marker,
+.img-brand-middle ul.img-list li.third span.second .marker {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: normal;
+  color: #000000;
+  padding: 10px;
+  background: white;
+  opacity: 0.7;
+}
+
+/* line 214, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.first .title,
+.img-brand-middle ul.img-list li.third span.second .title {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+  position: absolute;
+  left: 49px;
+  top: -9px;
+  background: white;
+  display: block;
+  width: 200px;
+  height: 60px;
+  padding: 7px 0 0 10px;
+}
+
+/* line 232, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.first .desc,
+.img-brand-middle ul.img-list li.third span.second .desc {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #000000;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  bottom: 4px;
+  left: 59px;
+  opacity: 0.5;
+}
+
+/* line 248, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.third {
+  position: absolute;
+  bottom: 20px;
+  left: 230px;
+  position: absolute;
+  bottom: 20px;
+  left: 230px;
+  background: black;
+  padding: 10px;
+}
+
+/* line 260, ../sass/refactor.scss */
+.img-brand-middle ul.img-list li.third span.third .desc {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+}
+
 /************************ BOTTOM - TOP ********/
-/* line 12, ../sass/refactor.scss */
+/* line 276, ../sass/refactor.scss */
 .bottom-top-container .middle-desc {
   margin-top: 10%;
 }
 
-/* line 20, ../sass/refactor.scss */
+/* line 284, ../sass/refactor.scss */
 .bottom-top-container .first .top .title {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -13,7 +307,7 @@
   margin-bottom: 20px;
 }
 
-/* line 28, ../sass/refactor.scss */
+/* line 292, ../sass/refactor.scss */
 .bottom-top-container .first .top .desc {
   font-family: Gotham Pro;
   font-size: 18px;
@@ -22,23 +316,23 @@
 }
 
 /** First slide**/
-/* line 36, ../sass/refactor.scss */
+/* line 300, ../sass/refactor.scss */
 .bottom-top-container .middle-desc .top {
   margin-top: 7%;
 }
 
-/* line 40, ../sass/refactor.scss */
+/* line 304, ../sass/refactor.scss */
 .bottom-top-container .img-brand-bottom {
   position: absolute;
 }
 
-/* line 44, ../sass/refactor.scss */
+/* line 308, ../sass/refactor.scss */
 .bottom-top-container img {
   opacity: 0.3;
   width: 100%;
 }
 
-/* line 50, ../sass/refactor.scss */
+/* line 314, ../sass/refactor.scss */
 .bottom-top-container .middle-desc .top .title {
   font-family: Gotham Pro;
   font-size: 36px;
@@ -47,7 +341,7 @@
   margin-bottom: 20px;
 }
 
-/* line 58, ../sass/refactor.scss */
+/* line 322, ../sass/refactor.scss */
 .bottom-top-container .middle-desc .top .desc {
   font-family: Gotham Pro;
   font-size: 18px;
@@ -55,12 +349,12 @@
   color: #000000;
 }
 
-/* line 65, ../sass/refactor.scss */
+/* line 329, ../sass/refactor.scss */
 .bottom-top-container .middle-desc .top .desc p {
   margin: 0;
 }
 
-/* line 69, ../sass/refactor.scss */
+/* line 333, ../sass/refactor.scss */
 .bottom-top-container .single-item .middle ul {
   list-style: none;
   margin: 140px 0 0 0;
@@ -69,17 +363,17 @@
   justify-content: space-between;
 }
 
-/* line 77, ../sass/refactor.scss */
+/* line 341, ../sass/refactor.scss */
 .bottom-top-container .single-item .middle ul li {
   padding: 5px;
 }
 
-/* line 81, ../sass/refactor.scss */
+/* line 345, ../sass/refactor.scss */
 .bottom-top-container .single-item .middle {
   margin-bottom: 150px;
 }
 
-/* line 85, ../sass/refactor.scss */
+/* line 349, ../sass/refactor.scss */
 .bottom-top-container .single-item .middle ul li .title {
   font-family: Gothic A1;
   font-style: normal;
@@ -90,7 +384,7 @@
 }
 
 @media (min-width: 768px) {
-  /* line 95, ../sass/refactor.scss */
+  /* line 359, ../sass/refactor.scss */
   .bottom-top-container .single-item .middle ul li .title {
     font-family: Gothic A1;
     font-style: normal;
@@ -100,49 +394,49 @@
     color: #000000;
   }
 
-  /* line 104, ../sass/refactor.scss */
+  /* line 368, ../sass/refactor.scss */
   .bottom-top-container .middle-desc .top .desc {
     /*font-size: 12px;*/
   }
 
-  /* line 108, ../sass/refactor.scss */
+  /* line 372, ../sass/refactor.scss */
   .bottom-top-container .middle-desc .top {
     margin-top: 1%;
   }
 }
-/* line 113, ../sass/refactor.scss */
+/* line 377, ../sass/refactor.scss */
 .bottom-top-container .single-item .middle ul li .desc {
   display: block;
 }
 
-/* line 117, ../sass/refactor.scss */
+/* line 381, ../sass/refactor.scss */
 .bottom-middle-container img, .bottom-bottom-container img, .footer-top-container img {
   width: 100%;
 }
 
-/* line 121, ../sass/refactor.scss */
+/* line 385, ../sass/refactor.scss */
 table tr:hover {
   background: gray;
 }
 
-/* line 125, ../sass/refactor.scss */
+/* line 389, ../sass/refactor.scss */
 .footer-top-container {
   margin-top: 50px;
   position: relative;
 }
 
-/* line 130, ../sass/refactor.scss */
+/* line 394, ../sass/refactor.scss */
 .footer-top-container .img-brand img {
   height: 500px;
 }
 
-/* line 135, ../sass/refactor.scss */
+/* line 399, ../sass/refactor.scss */
 .footer-top-container .footer-brand {
   position: absolute;
   top: 20%;
 }
 
-/* line 150, ../sass/refactor.scss */
+/* line 414, ../sass/refactor.scss */
 .footer-top-container .footer-brand .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -152,17 +446,17 @@ table tr:hover {
   color: #FFFFFF;
 }
 
-/* line 159, ../sass/refactor.scss */
+/* line 423, ../sass/refactor.scss */
 .footer-top-container .footer-brand .button {
   margin-top: 30px;
 }
 
-/* line 163, ../sass/refactor.scss */
+/* line 427, ../sass/refactor.scss */
 .footer-middle-container {
   margin-top: 50px;
 }
 
-/* line 177, ../sass/refactor.scss */
+/* line 441, ../sass/refactor.scss */
 .footer-middle-container .desc {
   font-family: Gothic A1;
   font-style: normal;
@@ -173,7 +467,7 @@ table tr:hover {
   margin-bottom: 30px;
 }
 
-/* line 188, ../sass/refactor.scss */
+/* line 452, ../sass/refactor.scss */
 .footer-middle-container iframe {
   width: 100%;
   height: 610px;

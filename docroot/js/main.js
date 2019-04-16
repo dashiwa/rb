@@ -24,6 +24,14 @@ $(".tabs li.third").mouseenter(function () {
     third.show();
 });
 
+$(".tabs li").mouseenter(function () {
+    if(!$(this).hasClass('active')){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    }
+
+});
+
 // $('.single-item').slick({dots: true,arrows:true});
 
 

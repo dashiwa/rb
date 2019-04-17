@@ -1,8 +1,11 @@
 var newYear = new Date();
 
 newYear = new Date("12 June 2019");
+var countdown = $('#defaultCountdown').countdown({until: newYear});
 
-$('#defaultCountdown').countdown({until: newYear});
+
+
+// $('#defaultCountdown').countdown({until: newYear});
 
 var first = $('.middle-bottom-container .img-list li.first');
 var second = $('.middle-bottom-container .img-list li.second');

@@ -652,6 +652,44 @@ main {
       }
 
     }
+  }/** END BOTTOM TOP CONTAINER **/
+
+
+  .bottom-middle-container{
+    margin-top: 20px;
+    background: url("../img/r_ 27.png");
+    height: 720px;
+    .part{
+      padding: 197px 0 0 40px;
+      .title{
+        height: 51px;
+        color: #FFFFFF;
+        font-family: "Gotham Pro";
+        font-size: 50px;
+        letter-spacing: 0.13px;
+        line-height: 51px;
+      }
+      .desc{
+        margin-top:40px;
+        height: 102px;
+        color: #FFFFFF;
+        font-family: "Gotham Pro";
+        font-size: 24px;
+        letter-spacing: 0.26px;
+        line-height: 34px;
+      }
+      .button{
+        height: 61px;
+        width: 250px;
+        border-radius: 35px;
+        background-color: #245CC1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
   }
 
 }

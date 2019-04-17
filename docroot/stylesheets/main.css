@@ -213,6 +213,7 @@ main {
   /** END MIDDLE CONTAINER **/
   /***************************** DINAMO ****************************************/
   /*********************MIDDLE CONTENT**********************/
+  /** END BOTTOM TOP CONTAINER **/
 }
 /* line 222, ../sass/main.scss */
 main .brand-middle {
@@ -677,4 +678,45 @@ main .bottom-top-container .bottom-list .row .odd {
 main .bottom-top-container .bottom-list .row .chh {
   height: 194px;
   background-color: #CF4817;
+}
+/* line 658, ../sass/main.scss */
+main .bottom-middle-container {
+  margin-top: 20px;
+  background: url("../img/r_ 27.png");
+  height: 500px;
+}
+/* line 662, ../sass/main.scss */
+main .bottom-middle-container .part {
+  padding: 197px 0 0 40px;
+}
+/* line 664, ../sass/main.scss */
+main .bottom-middle-container .part .title {
+  height: 51px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 50px;
+  letter-spacing: 0.13px;
+  line-height: 51px;
+}
+/* line 672, ../sass/main.scss */
+main .bottom-middle-container .part .desc {
+  margin-top: 40px;
+  height: 102px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  letter-spacing: 0.26px;
+  line-height: 34px;
+}
+/* line 681, ../sass/main.scss */
+main .bottom-middle-container .part .button {
+  height: 61px;
+  width: 250px;
+  border-radius: 35px;
+  background-color: #245CC1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
 }

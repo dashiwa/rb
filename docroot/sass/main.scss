@@ -354,7 +354,6 @@ main {
       margin: 0 0 0 40px;
       .title {
         height: 54px;
-        width: 537px;
         color: #FFFFFF;
         font-family: "Gotham Pro";
         font-size: 48px;
@@ -363,7 +362,6 @@ main {
       }
       .desc {
         height: 68px;
-        width: 558px;
         color: #FFFFFF;
         font-family: "Gotham Pro";
         font-size: 24px;
@@ -469,7 +467,6 @@ main {
             }
             .desc {
               height: 28px;
-              width: 315px;
               color: #FFFFFF;
               font-family: "Gotham Pro";
               font-size: 20px;
@@ -652,16 +649,16 @@ main {
       }
 
     }
-  }/** END BOTTOM TOP CONTAINER **/
+  }
+  /** END BOTTOM TOP CONTAINER **/
 
-
-  .bottom-middle-container{
+  .bottom-middle-container {
     margin-top: 20px;
     background: url("../img/r_ 27.png");
     height: 720px;
-    .part{
+    .part {
       padding: 197px 0 0 40px;
-      .title{
+      .title {
         height: 51px;
         color: #FFFFFF;
         font-family: "Gotham Pro";
@@ -669,8 +666,8 @@ main {
         letter-spacing: 0.13px;
         line-height: 51px;
       }
-      .desc{
-        margin-top:40px;
+      .desc {
+        margin-top: 40px;
         height: 102px;
         color: #FFFFFF;
         font-family: "Gotham Pro";
@@ -678,7 +675,7 @@ main {
         letter-spacing: 0.26px;
         line-height: 34px;
       }
-      .button{
+      .button {
         height: 61px;
         width: 250px;
         border-radius: 35px;
@@ -688,6 +685,44 @@ main {
         justify-content: center;
         color: white;
         text-transform: uppercase;
+      }
+    }
+  }
+  /** END BOTTOM MIDDLE CONTAINER **/
+
+  .bottom-bottom-container {
+    margin-top: 20px;
+    height: 801px;
+    background-color: #ECECEC;
+  }
+
+  .bottom-footer-container {
+    margin-top: 20px;
+    padding-top: 110px;
+    background: white;
+    .title, .email-first, .email-second {
+      height: 160px;
+      color: #000000;
+      font-family: "Gotham Pro";
+      font-size: 40px;
+      letter-spacing: 0.11px;
+      line-height: 40px;
+    }
+  }
+
+}
+
+body.eng {
+  .bottom-top-container {
+    height: auto;
+    .bottom-list {
+      position: initial;
+      .odd {
+        height: auto;
+        .desc {
+          padding: 10px;
+          height: auto;
+        }
       }
     }
   }

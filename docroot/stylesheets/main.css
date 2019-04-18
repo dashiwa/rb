@@ -214,6 +214,7 @@ main {
   /***************************** DINAMO ****************************************/
   /*********************MIDDLE CONTENT**********************/
   /** END BOTTOM TOP CONTAINER **/
+  /** END BOTTOM MIDDLE CONTAINER **/
 }
 /* line 222, ../sass/main.scss */
 main .brand-middle {
@@ -367,29 +368,27 @@ main .middle-bottom-container .dinamo-block {
 /* line 355, ../sass/main.scss */
 main .middle-bottom-container .dinamo-block .title {
   height: 54px;
-  width: 537px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 48px;
   letter-spacing: 0.13px;
   line-height: 54px;
 }
-/* line 364, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 main .middle-bottom-container .dinamo-block .desc {
   height: 68px;
-  width: 558px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 24px;
   letter-spacing: 0.26px;
   line-height: 34px;
 }
-/* line 376, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 main .middle-bottom-container .tabs {
   margin-top: 130px;
   margin-left: 45px;
 }
-/* line 380, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 main .middle-bottom-container .tabs ul {
   list-style: none;
   margin: 0;
@@ -398,11 +397,11 @@ main .middle-bottom-container .tabs ul {
   display: flex;
   flex-direction: column;
 }
-/* line 388, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 main .middle-bottom-container .tabs ul li.active {
   background: none;
 }
-/* line 391, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 main .middle-bottom-container .tabs ul li {
   height: 77px;
   width: 194px;
@@ -412,7 +411,7 @@ main .middle-bottom-container .tabs ul li {
   align-items: center;
   background-color: #FAB04F;
 }
-/* line 399, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 main .middle-bottom-container .tabs ul li a {
   height: 16px;
   color: #FFFFFF;
@@ -422,26 +421,26 @@ main .middle-bottom-container .tabs ul li a {
   letter-spacing: 0.05px;
   line-height: 17px;
 }
-/* line 414, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle {
   color: white;
 }
-/* line 417, ../sass/main.scss */
+/* line 415, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li {
   display: none;
 }
-/* line 420, ../sass/main.scss */
+/* line 418, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.active {
   display: block;
 }
-/* line 423, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list .mark_n {
   height: 24px;
   width: 24px;
   background-color: #FAB04F;
   border-radius: 15px;
 }
-/* line 430, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first {
   position: absolute;
   left: 425px;
@@ -450,7 +449,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first 
   display: flex;
   flex-direction: column;
 }
-/* line 437, ../sass/main.scss */
+/* line 435, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first .title {
   height: 62px;
   color: #FFFFFF;
@@ -459,7 +458,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first 
   letter-spacing: 2.98px;
   line-height: 67px;
 }
-/* line 445, ../sass/main.scss */
+/* line 443, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first .desc {
   height: 28px;
   color: #FFFFFF;
@@ -468,7 +467,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first 
   letter-spacing: 0.05px;
   line-height: 28px;
 }
-/* line 454, ../sass/main.scss */
+/* line 452, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second {
   position: absolute;
   left: 393px;
@@ -477,7 +476,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second
   display: flex;
   flex-direction: column;
 }
-/* line 461, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second .title {
   height: 62px;
   width: 162px;
@@ -487,10 +486,9 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second
   letter-spacing: 2.98px;
   line-height: 67px;
 }
-/* line 470, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second .desc {
   height: 28px;
-  width: 315px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 20px;
@@ -498,7 +496,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second
   line-height: 28px;
   text-transform: uppercase;
 }
-/* line 481, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third {
   position: absolute;
   right: 150px;
@@ -507,7 +505,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third 
   display: flex;
   flex-direction: column;
 }
-/* line 488, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third span.title {
   height: 62px;
   width: 93px;
@@ -517,7 +515,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third 
   letter-spacing: 2.98px;
   line-height: 67px;
 }
-/* line 497, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third span.desc {
   height: 28px;
   width: 212px;
@@ -527,7 +525,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third 
   letter-spacing: 0.05px;
   line-height: 28px;
 }
-/* line 507, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth {
   position: absolute;
   right: 40px;
@@ -536,7 +534,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth
   display: flex;
   flex-direction: column;
 }
-/* line 514, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth span.title {
   height: 62px;
   width: 145px;
@@ -546,7 +544,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth
   letter-spacing: 2.98px;
   line-height: 67px;
 }
-/* line 523, ../sass/main.scss */
+/* line 520, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth span.desc {
   height: 28px;
   width: 234px;
@@ -556,7 +554,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth
   letter-spacing: 0.05px;
   line-height: 28px;
 }
-/* line 536, ../sass/main.scss */
+/* line 533, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first {
   position: absolute;
   left: 456px;
@@ -565,7 +563,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first
   display: flex;
   flex-direction: column;
 }
-/* line 543, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first span.title {
   height: 62px;
   width: 74px;
@@ -575,7 +573,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first
   letter-spacing: 2.98px;
   line-height: 67px;
 }
-/* line 552, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first span.desc {
   height: 28px;
   width: 221px;
@@ -585,7 +583,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first
   letter-spacing: 0.05px;
   line-height: 28px;
 }
-/* line 562, ../sass/main.scss */
+/* line 559, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.second {
   position: absolute;
   left: 690px;
@@ -594,7 +592,7 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.secon
   display: flex;
   flex-direction: column;
 }
-/* line 571, ../sass/main.scss */
+/* line 568, ../sass/main.scss */
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.second span.desc ul li {
   display: block;
   width: 285px;
@@ -605,14 +603,14 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.secon
   line-height: 40px;
   text-transform: uppercase;
 }
-/* line 592, ../sass/main.scss */
+/* line 589, ../sass/main.scss */
 main .bottom-top-container {
   background: url("../img/r_25.png");
   height: 830px;
   margin-top: 20px;
   position: relative;
 }
-/* line 597, ../sass/main.scss */
+/* line 594, ../sass/main.scss */
 main .bottom-top-container .city-label {
   height: 51px;
   width: 164px;
@@ -624,33 +622,33 @@ main .bottom-top-container .city-label {
   padding: 90px 0 0 40px;
 }
 @media (min-width: 576px) {
-  /* line 607, ../sass/main.scss */
+  /* line 604, ../sass/main.scss */
   main .bottom-top-container .bottom-list {
     position: initial;
     padding-top: 100px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 607, ../sass/main.scss */
+  /* line 604, ../sass/main.scss */
   main .bottom-top-container .bottom-list {
     position: absolute;
     bottom: 17px;
   }
 }
-/* line 617, ../sass/main.scss */
+/* line 614, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-/* line 621, ../sass/main.scss */
+/* line 618, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row div {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-/* line 626, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row div .title {
   height: 43px;
   color: #FFFFFF;
@@ -659,7 +657,7 @@ main .bottom-top-container .bottom-list .row div .title {
   letter-spacing: 1px;
   line-height: 46px;
 }
-/* line 634, ../sass/main.scss */
+/* line 631, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row div .desc {
   height: 44px;
   color: #FFFFFF;
@@ -669,27 +667,27 @@ main .bottom-top-container .bottom-list .row div .desc {
   line-height: 22px;
   text-align: center;
 }
-/* line 644, ../sass/main.scss */
+/* line 641, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row .odd {
   height: 194px;
   background-color: #245CC1;
 }
-/* line 648, ../sass/main.scss */
+/* line 645, ../sass/main.scss */
 main .bottom-top-container .bottom-list .row .chh {
   height: 194px;
   background-color: #CF4817;
 }
-/* line 658, ../sass/main.scss */
+/* line 655, ../sass/main.scss */
 main .bottom-middle-container {
   margin-top: 20px;
   background: url("../img/r_ 27.png");
-  height: 500px;
+  height: 720px;
 }
-/* line 662, ../sass/main.scss */
+/* line 659, ../sass/main.scss */
 main .bottom-middle-container .part {
   padding: 197px 0 0 40px;
 }
-/* line 664, ../sass/main.scss */
+/* line 661, ../sass/main.scss */
 main .bottom-middle-container .part .title {
   height: 51px;
   color: #FFFFFF;
@@ -698,7 +696,7 @@ main .bottom-middle-container .part .title {
   letter-spacing: 0.13px;
   line-height: 51px;
 }
-/* line 672, ../sass/main.scss */
+/* line 669, ../sass/main.scss */
 main .bottom-middle-container .part .desc {
   margin-top: 40px;
   height: 102px;
@@ -708,7 +706,7 @@ main .bottom-middle-container .part .desc {
   letter-spacing: 0.26px;
   line-height: 34px;
 }
-/* line 681, ../sass/main.scss */
+/* line 678, ../sass/main.scss */
 main .bottom-middle-container .part .button {
   height: 61px;
   width: 250px;
@@ -719,4 +717,43 @@ main .bottom-middle-container .part .button {
   justify-content: center;
   color: white;
   text-transform: uppercase;
+}
+/* line 693, ../sass/main.scss */
+main .bottom-bottom-container {
+  margin-top: 20px;
+  height: 801px;
+  background-color: #ECECEC;
+}
+/* line 699, ../sass/main.scss */
+main .bottom-footer-container {
+  margin-top: 20px;
+  padding-top: 110px;
+  background: white;
+}
+/* line 703, ../sass/main.scss */
+main .bottom-footer-container .title, main .bottom-footer-container .email-first, main .bottom-footer-container .email-second {
+  height: 160px;
+  color: #000000;
+  font-family: "Gotham Pro";
+  font-size: 40px;
+  letter-spacing: 0.11px;
+  line-height: 40px;
+}
+
+/* line 716, ../sass/main.scss */
+body.eng .bottom-top-container {
+  height: auto;
+}
+/* line 718, ../sass/main.scss */
+body.eng .bottom-top-container .bottom-list {
+  position: initial;
+}
+/* line 720, ../sass/main.scss */
+body.eng .bottom-top-container .bottom-list .odd {
+  height: auto;
+}
+/* line 722, ../sass/main.scss */
+body.eng .bottom-top-container .bottom-list .odd .desc {
+  padding: 10px;
+  height: auto;
 }

@@ -2,6 +2,8 @@
 
 body {
   background: url("../img/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -181,9 +183,10 @@ $white_color: #FFFFFF;
     color: #FFFFFF;
     font-family: "Gotham Pro";
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.06px;
     line-height: 64px;
+    padding-left: 35px;
 
   }
   /** END BOTTOM TOP **/
@@ -384,7 +387,7 @@ main {
         flex-direction: column;
 
         li.active {
-          background: none;
+          background-color: #FAB04F;
         }
         li {
           height: 77px;
@@ -393,7 +396,7 @@ main {
           border: 1px solid #FFFFFF;
           justify-content: center;
           align-items: center;
-          background-color: #FAB04F;
+          background: none;
           a {
             height: 16px;
             color: #FFFFFF;
@@ -579,6 +582,13 @@ main {
             }
           }
         }
+        li.third{
+          .mapouter{
+            position: absolute;
+            left: 425px;
+            top: 200px;
+          }
+        }
 
       }
     }
@@ -685,6 +695,9 @@ main {
         justify-content: center;
         color: white;
         text-transform: uppercase;
+        a{
+          color: white;
+        }
       }
     }
   }
@@ -712,19 +725,43 @@ main {
 
 }
 
-body.eng {
-  .bottom-top-container {
-    height: auto;
-    .bottom-list {
-      position: initial;
-      .odd {
-        height: auto;
-        .desc {
-          padding: 10px;
-          height: auto;
-        }
+
+/** LOGOS **/
+
+.logos{
+  ul{
+    li{
+      a.fb{
+        background: url(../img/f.png);
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 140px;
+        top: 6px;
+      }
+    }
+
+    li {
+      a.inst{
+
+        background: url("../img/in.png");
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 185px;
+        top: 6px;
       }
     }
   }
+}
 
+
+/** STATIC NAV BAR AND BUTTON **/
+@media (min-width: 1200px) {
+  .fixed{
+    position: fixed;
+    z-index: 10;
+  }
 }

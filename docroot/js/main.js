@@ -3,7 +3,9 @@ var newYear = new Date();
 newYear = new Date("9 September 2019");
 var countdown = $('#defaultCountdown').countdown({until: newYear});
 
-
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 // $('#defaultCountdown').countdown({until: newYear});
 
@@ -28,7 +30,7 @@ $(".tabs li.third").mouseenter(function () {
 });
 
 $(".tabs li").mouseenter(function () {
-    if(!$(this).hasClass('active')){
+    if (!$(this).hasClass('active')) {
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
     }
@@ -51,8 +53,20 @@ $('.day_switcher ul li').click(function () {
 });
 
 
-
-if(window.location.pathname == '/eng/'){
- $('.language li a.eng').addClass('active');
- $('.language li a.ru').removeClass('active');
+if (window.location.pathname == '/eng/') {
+    $('.language li a.eng').addClass('active');
+    $('.language li a.ru').removeClass('active');
 }
+
+var nav_menu = $('.navbar-nav');
+var button_fixed = $('.ticket-button-wrapper');
+
+$(window).scroll(function() {
+    if (this.scrollY > 500) {
+        button_fixed.addClass("fixed");
+        nav_menu.addClass("fixed");
+    } else {
+        nav_menu.removeClass("fixed");
+        button_fixed.removeClass("fixed");
+    }
+});

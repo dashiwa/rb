@@ -11,7 +11,7 @@
 <!-- Custom styles for this template -->
 <link href="../stylesheets/style.css" rel="stylesheet">
 
-<body>
+<body #id="scroll">
 
 <header>
 
@@ -51,6 +51,17 @@
 
                 </nav>
 
+                <div class="logos">
+                    <ul>
+                        <li>
+                            <a class="fb" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="inst" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="language">
                     <ul>
                         <li><a class="ru active" href="/">Ру</a></li>
@@ -75,7 +86,8 @@
                 </div>
 
                 <div class="ticket-button-wrapper col-lg-4 col-sm-12">
-                    <div class="ticket-button">Билеты скоро в продаже</div>
+                    <div data-toggle="tooltip" title="THE GREATEST RIVALRY IN ATHLETICS HISTORY. BEGINS"  data-placement="top" class="ticket-button">Билеты скоро в продаже</div>
+
                 </div>
 
 
@@ -481,7 +493,7 @@
             <ul>
                 <li class="first active"><a class="active" href="#">Зрителям</a></li>
                 <li class="second"><a href="#">Спортсменам</a></li>
-                <!--<li class="third"><a href="#">Схема проезда</a></li>-->
+                <li class="third"><a href="#">Схема проезда</a></li>
             </ul>
         </div>
 
@@ -536,6 +548,15 @@
                     </span>
                     <span class="mark_n"></span>
                 </span>
+                </li>
+                <li class="third">
+                    <div class="mapouter row">
+                        <div class="gmap_canvas col-lg-12">
+                            <iframe width="600" height="600" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=%D0%BC%D0%B8%D0%BD%D1%81%D0%BA%20%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
                 </li>
             </ul>
 
@@ -610,8 +631,9 @@
             </div>
             <div class="desc">
                 Если ты хочешь стать частью грандиозного события международного масштаба,
-                то зарегистрируйся и мы свяжемся с тобой</div>
-            <div class="button">стать волонтером</div>
+                то зарегистрируйся и мы свяжемся с тобой
+            </div>
+            <div class="button"><a href="https://docs.google.com/forms/d/19eDaXA-Td97Rf72Gbu6ij6xhiQhXSwGUtBYOfTwd6Zg/viewform?edit_requested=true">стать волонтером</a></div>
         </div>
 
     </div><!-- END BOTTOM MIDDLE CONTAINER -->
@@ -649,5 +671,7 @@
 <script src="../bootstrap/js/jquery.countdown-ru.js"></script>
 <!--<script src="../bootstrap/js/slick.js"></script>-->
 <script src="../js/main.js"></script>
+
+
 
 </html>

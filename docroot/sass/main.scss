@@ -34,6 +34,7 @@ $white_color: #FFFFFF;
     background-position: center;
 
   }
+
   /** END LOGO **/
 
   /** NAV MENU **/
@@ -42,6 +43,7 @@ $white_color: #FFFFFF;
     .navbar-toggler {
       margin: auto;
     }
+
     .navbar-nav {
 
       a {
@@ -54,11 +56,13 @@ $white_color: #FFFFFF;
         margin-right: 2.0rem;
         height: 35px;
       }
+
       a:hover {
         border-bottom: $white_color 3px solid;
       }
     }
   }
+
   /** END NAV MENU **/
 
   /** LANGUAGE SWITCHER **/
@@ -66,10 +70,12 @@ $white_color: #FFFFFF;
     position: absolute;
     right: 39px;
     top: 19px;
+
     ul {
       display: flex;
       width: 62px;
       justify-content: space-between;
+
       li {
         a {
           font-family: "Gotham Pro";
@@ -78,16 +84,19 @@ $white_color: #FFFFFF;
           line-height: 17px;
           color: $white_color;
         }
+
         a.active {
           color: #A94729;
         }
       }
+
       li:first-child {
         border-right: 1px solid $white_color;
         padding-right: 7px;
       }
     }
   }
+
   /** END LANGUAGE SWITCHER **/
 
   /** MIDDLE HEADER **/
@@ -100,6 +109,7 @@ $white_color: #FFFFFF;
         padding-left: 3%;
       }
       text-align: center;
+
       .title {
         height: 57px;
         color: #FFFFFF;
@@ -107,6 +117,7 @@ $white_color: #FFFFFF;
         font-size: 64px;
         line-height: 61px;
       }
+
       .desc {
         height: 22px;
         color: #FFFFFF;
@@ -159,6 +170,7 @@ $white_color: #FFFFFF;
             letter-spacing: 0.12px;
             line-height: 44px;
           }
+
           .countdown-period {
             height: 12px;
             width: 42px;
@@ -175,6 +187,7 @@ $white_color: #FFFFFF;
       }
     }
   }
+
   /**END MIDDLE HEADER **/
 
   /**BOTTOM TOP**/
@@ -189,6 +202,7 @@ $white_color: #FFFFFF;
     padding-left: 35px;
 
   }
+
   /** END BOTTOM TOP **/
 
   /** BOTTOM MIDDLE HEADER **/
@@ -196,6 +210,7 @@ $white_color: #FFFFFF;
     margin-top: 100px;
     padding-left: 2%;
     height: 230px;
+
     .mark {
       background: url("../img/shape.png");
       height: 80px;
@@ -203,6 +218,7 @@ $white_color: #FFFFFF;
       margin: auto;
       margin-bottom: 20px;
     }
+
     .desc {
       color: #FFFFFF;
       font-family: "Gotham Pro";
@@ -212,6 +228,7 @@ $white_color: #FFFFFF;
       text-transform: uppercase;
     }
   }
+
   /** END BOTTOM MIDDLE HEADER **/
 
 }
@@ -223,6 +240,7 @@ $white_color: #FFFFFF;
 main {
 
   .brand-middle {
+    padding-top: 100px;
     margin-top: 10px;
     background: url("../img/g_13.png");
 
@@ -234,6 +252,7 @@ main {
       line-height: 86px;
       margin-left: 11%;
     }
+
     .strong {
       color: #FFFFFF;
       font-family: "Gotham Pro";
@@ -243,6 +262,7 @@ main {
       margin-left: 11%;
       text-transform: uppercase;
     }
+
     .msg {
       margin-top: 95px;
       color: #FFFFFF;
@@ -251,24 +271,30 @@ main {
       letter-spacing: 0.16px;
       line-height: 34px;
       margin-left: 4%;
+
       p {
         margin: 10px;
         pdding: 10px;
       }
     }
   }
+
   /** END BRAND MIDLLE */
 
   .middle-container {
     background: white;
+
     .day_switcher {
       padding-top: 80px;
       margin-top: 20px;
       margin-bottom: 50px;
+
       ul {
         display: flex;
+
         li.active {
           background-color: #C9142E;
+
           .title {
             color: #FFFFFF;
             font-family: "Gotham Pro";
@@ -277,6 +303,7 @@ main {
             letter-spacing: 0.2px;
             line-height: 34px;
           }
+
           .desc {
             color: #FFFFFF;
             font-family: "Gotham Pro";
@@ -286,12 +313,14 @@ main {
             line-height: 17px;
           }
         }
+
         li {
           display: flex;
           justify-content: space-between;
           flex-direction: column;
           padding: 20px;
           height: 110px;
+
           .title {
             color: #000000;
             font-family: "Gotham Pro";
@@ -300,6 +329,7 @@ main {
             letter-spacing: 0.2px;
             line-height: 34px;
           }
+
           .desc {
             color: #000000;
             font-family: "Gotham Pro";
@@ -312,14 +342,22 @@ main {
       }
     }
   }
+
   /** END MIDDLE CONTAINER **/
   .day {
     display: none;
   }
+
   .table-wrapper {
+    .first_day, .second_day {
+      height: 570px;
+      overflow: hidden;
+    }
+
     .active {
       display: block;
     }
+
     td {
       color: #000000;
       font-family: "Gotham Pro";
@@ -327,9 +365,15 @@ main {
       letter-spacing: 0.07px;
       line-height: 26px;
     }
+
     tr:hover {
       background-color: #FAB04F;
     }
+
+    .female, .male {
+      text-align: right;
+    }
+
     .female {
       color: #CF4817;
       font-family: "Gotham Pro";
@@ -345,6 +389,7 @@ main {
     background: url("../img/g_14.png");
     padding-top: 40px;
     height: 860px;
+
     .title-pl {
       font-family: Gotham Pro;
       font-size: 36px;
@@ -355,6 +400,7 @@ main {
 
     .dinamo-block {
       margin: 0 0 0 40px;
+
       .title {
         height: 54px;
         color: #FFFFFF;
@@ -363,6 +409,7 @@ main {
         letter-spacing: 0.13px;
         line-height: 54px;
       }
+
       .desc {
         height: 68px;
         color: #FFFFFF;
@@ -372,6 +419,7 @@ main {
         line-height: 34px;
       }
     }
+
     /** END DINAMO BLOCK ***/
 
     .tabs {
@@ -389,6 +437,7 @@ main {
         li.active {
           background-color: #FAB04F;
         }
+
         li {
           height: 77px;
           width: 194px;
@@ -397,6 +446,7 @@ main {
           justify-content: center;
           align-items: center;
           background: none;
+
           a {
             height: 16px;
             color: #FFFFFF;
@@ -410,23 +460,28 @@ main {
       }
 
     }
+
     /** END TABS **/
 
     .img-brand-middle {
       color: white;
+
       ul.img-list {
         li {
           display: none;
         }
+
         li.active {
           display: block;
         }
+
         .mark_n {
           height: 24px;
           width: 24px;
           background-color: #FAB04F;
           border-radius: 15px;
         }
+
         li.first {
           span.first {
             position: absolute;
@@ -435,6 +490,7 @@ main {
             top: 322px;
             display: flex;
             flex-direction: column;
+
             .title {
               height: 62px;
               color: #FFFFFF;
@@ -443,6 +499,7 @@ main {
               letter-spacing: 2.98px;
               line-height: 67px;
             }
+
             .desc {
               height: 28px;
               color: #FFFFFF;
@@ -452,6 +509,7 @@ main {
               line-height: 28px;
             }
           }
+
           span.second {
             position: absolute;
             left: 393px;
@@ -459,6 +517,7 @@ main {
             top: 530px;
             display: flex;
             flex-direction: column;
+
             .title {
               height: 62px;
               width: 162px;
@@ -468,6 +527,7 @@ main {
               letter-spacing: 2.98px;
               line-height: 67px;
             }
+
             .desc {
               height: 28px;
               color: #FFFFFF;
@@ -478,6 +538,7 @@ main {
               text-transform: uppercase;
             }
           }
+
           span.third {
             position: absolute;
             right: 150px;
@@ -485,6 +546,7 @@ main {
             top: 495px;
             display: flex;
             flex-direction: column;
+
             span.title {
               height: 62px;
               width: 93px;
@@ -494,6 +556,7 @@ main {
               letter-spacing: 2.98px;
               line-height: 67px;
             }
+
             span.desc {
               height: 28px;
               width: 212px;
@@ -504,6 +567,7 @@ main {
               line-height: 28px;
             }
           }
+
           span.fourth {
             position: absolute;
             right: 40px;
@@ -511,6 +575,7 @@ main {
             top: 653px;
             display: flex;
             flex-direction: column;
+
             span.title {
               height: 62px;
               width: 145px;
@@ -520,6 +585,7 @@ main {
               letter-spacing: 2.98px;
               line-height: 67px;
             }
+
             span.desc {
               height: 28px;
               width: 234px;
@@ -532,6 +598,7 @@ main {
           }
 
         }
+
         li.second {
           span.first {
             position: absolute;
@@ -540,6 +607,7 @@ main {
             top: 444px;
             display: flex;
             flex-direction: column;
+
             span.title {
               height: 62px;
               width: 74px;
@@ -549,6 +617,7 @@ main {
               letter-spacing: 2.98px;
               line-height: 67px;
             }
+
             span.desc {
               height: 28px;
               width: 221px;
@@ -559,6 +628,7 @@ main {
               line-height: 28px;
             }
           }
+
           span.second {
             position: absolute;
             left: 690px;
@@ -566,6 +636,7 @@ main {
             top: 415px;
             display: flex;
             flex-direction: column;
+
             span.desc {
               ul {
                 li {
@@ -582,10 +653,11 @@ main {
             }
           }
         }
-        li.third{
-          .mapouter{
+
+        li.third {
+          .mapouter {
             position: absolute;
-            left: 425px;
+            left: 325px;
             top: 200px;
           }
         }
@@ -598,9 +670,9 @@ main {
 
   .bottom-top-container {
     background: url("../img/r_25.png");
-    height: 830px;
     margin-top: 20px;
     position: relative;
+
     .city-label {
       height: 51px;
       width: 164px;
@@ -611,6 +683,7 @@ main {
       line-height: 51px;
       padding: 90px 0 0 40px;
     }
+
     .bottom-list {
       @media (min-width: 576px) {
         position: initial;
@@ -625,11 +698,13 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+
         div {
           display: flex;
           align-items: center;
           flex-direction: column;
           justify-content: center;
+
           .title {
             height: 43px;
             color: #FFFFFF;
@@ -638,6 +713,7 @@ main {
             letter-spacing: 1px;
             line-height: 46px;
           }
+
           .desc {
             height: 44px;
             color: #FFFFFF;
@@ -648,10 +724,12 @@ main {
             text-align: center;
           }
         }
+
         .odd {
           height: 194px;
           background-color: #245CC1;
         }
+
         .chh {
           height: 194px;
           background-color: #CF4817;
@@ -660,14 +738,17 @@ main {
 
     }
   }
+
   /** END BOTTOM TOP CONTAINER **/
 
   .bottom-middle-container {
     margin-top: 20px;
     background: url("../img/r_ 27.png");
     height: 720px;
+
     .part {
       padding: 197px 0 0 40px;
+
       .title {
         height: 51px;
         color: #FFFFFF;
@@ -676,6 +757,7 @@ main {
         letter-spacing: 0.13px;
         line-height: 51px;
       }
+
       .desc {
         margin-top: 40px;
         height: 102px;
@@ -685,6 +767,7 @@ main {
         letter-spacing: 0.26px;
         line-height: 34px;
       }
+
       .button {
         height: 61px;
         width: 250px;
@@ -695,12 +778,14 @@ main {
         justify-content: center;
         color: white;
         text-transform: uppercase;
-        a{
+
+        a {
           color: white;
         }
       }
     }
   }
+
   /** END BOTTOM MIDDLE CONTAINER **/
 
   .bottom-bottom-container {
@@ -713,6 +798,7 @@ main {
     margin-top: 20px;
     padding-top: 110px;
     background: white;
+
     .title, .email-first, .email-second {
       height: 160px;
       color: #000000;
@@ -728,10 +814,10 @@ main {
 
 /** LOGOS **/
 
-.logos{
-  ul{
-    li{
-      a.fb{
+.logos {
+  ul {
+    li {
+      a.fb {
         background: url(../img/f.png);
         width: 40px;
         height: 40px;
@@ -743,15 +829,14 @@ main {
     }
 
     li {
-      a.inst{
-
+      a.inst {
         background: url("../img/in.png");
         width: 40px;
         height: 40px;
         display: block;
         position: absolute;
         right: 185px;
-        top: 6px;
+        top: 3px;
       }
     }
   }
@@ -760,8 +845,11 @@ main {
 
 /** STATIC NAV BAR AND BUTTON **/
 @media (min-width: 1200px) {
-  .fixed{
+  .fixed {
     position: fixed;
     z-index: 10;
+  }
+  .bottom-top-container {
+    height: 830px;
   }
 }

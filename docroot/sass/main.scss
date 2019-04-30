@@ -822,6 +822,121 @@ main {
 
 }
 
+#news-block {
+  margin-top: 20px;
+  color: $white_color;
+  background: url(../img/block3.jpg) 50% 0 no-repeat #262959;
+  @include background-size(cover);
+  padding: 35px 55px 70px 40px;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+
+  .block-title {
+    font-size: 50px;
+    letter-spacing: 0.132353px;
+  }
+
+  .block-title + .news-list {
+    margin-top: 35px;
+  }
+  .news-list {
+    .news-single {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 991px) {
+        margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      $gap: 29px;
+      $container_width: 1183px;
+
+      & > .row {
+        margin-left: -$gap;
+        margin-right: -$gap;
+
+        & > div {
+          padding-left: $gap;
+          padding-right: $gap;
+        }
+      }
+
+      .image-column {
+        @media (min-width: 992px) {
+          $w: 350px + 2 * $gap;
+          $w: percentage($w/$container_width);
+          -ms-flex: 0 0 $w;
+          flex: 0 0 $w;
+          max-width: $w;
+        }
+        @media (max-width: 991px) {
+          margin-bottom: 50px;
+        }
+      }
+      .text-column {
+        @media (min-width: 992px) {
+          float: right;
+          $w: 717px + 2 * $gap;
+          $w: percentage($w/$container_width);
+          -ms-flex: 0 0 $w;
+          flex: 0 0 $w;
+          max-width: $w;
+        }
+      }
+
+      .news-title {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 5px;
+        letter-spacing: 0.259412px;
+
+        @media (min-width: 992px) {
+          margin-top: -7px;
+        }
+      }
+      .news-excerpt {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.259412px;
+      }
+      .btn-wrap {
+        margin-top: 15px;
+      }
+      $btn_color: #FAB03B;
+      .btn-warning {
+        color: $white_color;
+        font-size: 18px;
+        letter-spacing: 0.259412px;
+        @include border-radius(0);
+        padding: 10px 27px;
+
+        background-color: $btn_color;
+        border-color: $btn_color;
+
+        &:active,
+        &:hover {
+          $hover_c: darken($btn_color, 10%);
+          background-color: $hover_c;
+          border-color: $hover_c;
+        }
+
+        @media (min-width: 992px) {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
 #media-block {
   margin-top: 20px;
   color: $white_color;
@@ -830,11 +945,13 @@ main {
 
   .block-title {
     font-size: 50px;
+    letter-spacing: 0.132353px;
   }
 
-  .media-columns {
+  .block-title + .media-columns {
     margin-top: 98px;
-
+  }
+  .media-columns {
     $gap: 23px;
     $container_width: 1188px;
     margin-left: -$gap;

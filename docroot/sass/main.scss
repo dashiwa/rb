@@ -2,7 +2,7 @@
 
 body {
   background: url("../img/bg.jpg");
-  background-position: center;
+  background-position: 50% 180px;
   background-repeat: no-repeat;
 }
 
@@ -14,6 +14,11 @@ header {
 
 }
 
+iframe,
+img {
+  max-width: 100%;
+}
+
 /************************TOP NAVIGATION MENU*************************************/
 
 // Variables.
@@ -21,8 +26,10 @@ $gotham_pro_font_family: "Gotham Pro", Arial, sans-serif;
 $medium_font_size: 16px;
 $medium_line_height: 16px;
 $white_color: #FFFFFF;
+$grid_gap: 15px;
+$container_width: 1220px;
 
-body {
+html body {
   font-family: $gotham_pro_font_family;
 }
 
@@ -818,15 +825,49 @@ main {
 #media-block {
   margin-top: 20px;
   color: $white_color;
-  background-color: #262959;
-  height: 800px;
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
+  background: url(../img/block8.jpg) 0 0 no-repeat #262959;
+  padding: 65px 39px 168px;
 
   .block-title {
     font-size: 50px;
   }
+
+  .media-columns {
+    margin-top: 98px;
+
+    $gap: 23px;
+    $container_width: 1188px;
+    margin-left: -$gap;
+    margin-right: -$gap;
+
+    & > div {
+      padding-left: $gap;
+      padding-right: $gap;
+    }
+    .image-column {
+      @media (min-width: 992px) {
+        $w: 400px + 2 * $gap;
+        $w: percentage($w/$container_width);
+        -ms-flex: 0 0 $w;
+        flex: 0 0 $w;
+        max-width: $w;
+      }
+      @media (max-width: 991px) {
+        margin-bottom: 50px;
+      }
+    }
+    .video-column {
+      @media (min-width: 992px) {
+        float: right;
+        $w: 694px + 2 * $gap;
+        $w: percentage($w/$container_width);
+        -ms-flex: 0 0 $w;
+        flex: 0 0 $w;
+        max-width: $w;
+      }
+    }
+  }
+
 }
 /** END MEDIA BLOCK **/
 

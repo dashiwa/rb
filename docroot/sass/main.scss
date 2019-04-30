@@ -1,14 +1,14 @@
 /******************Global body tag******************************/
 
 body {
-  background: url("../img/back.png");
+  background: url("../img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 header {
   .container {
-    background: url("../img/mid_top.png");
+    background: url("../img/block1.jpg");
     background-repeat: no-repeat;
   }
 
@@ -86,7 +86,7 @@ $white_color: #FFFFFF;
         }
 
         a.active {
-          color: #A94729;
+          color: #FAB03B;
         }
       }
 
@@ -153,7 +153,7 @@ $white_color: #FFFFFF;
 
           height: 115px;
           width: 110px;
-          background-color: #D44A18;
+          background: linear-gradient(180deg, rgba(38, 41, 89, 0) 0%, #262959 100%);
           display: flex;
           flex-direction: column;
           float: left;
@@ -212,7 +212,7 @@ $white_color: #FFFFFF;
     height: 230px;
 
     .mark {
-      background: url("../img/shape.png");
+      background: url("../img/Combined Shape.png");
       height: 80px;
       width: 55px;
       margin: auto;
@@ -818,38 +818,28 @@ main {
   ul {
     li {
       a.fb {
-        background: url(../img/f.png);
-        width: 40px;
-        height: 40px;
+        background: url(../img/facebook-logo-button.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
         display: block;
         position: absolute;
-        right: 140px;
-        top: 6px;
+        right: 145px;
+        top: 20px;
       }
     }
 
     li {
       a.inst {
-        background: url("../img/in.png");
-        width: 40px;
-        height: 40px;
+        background: url("../img/instagram.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
         display: block;
         position: absolute;
         right: 185px;
-        top: 3px;
+        top: 20px;
       }
     }
-  }
-}
-
-
-/** STATIC NAV BAR AND BUTTON **/
-@media (min-width: 1200px) {
-  .fixed {
-    position: fixed;
-    z-index: 10;
-  }
-  .bottom-top-container {
-    height: 830px;
   }
 }

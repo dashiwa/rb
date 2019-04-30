@@ -22,6 +22,10 @@ $medium_font_size: 16px;
 $medium_line_height: 16px;
 $white_color: #FFFFFF;
 
+body {
+  font-family: $gotham_pro_font_family;
+}
+
 .container {
   max-width: 1220px;
   position: relative;
@@ -811,6 +815,20 @@ main {
 
 }
 
+#media-block {
+  margin-top: 20px;
+  color: $white_color;
+  background-color: #262959;
+  height: 800px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .block-title {
+    font-size: 50px;
+  }
+}
+/** END MEDIA BLOCK **/
 
 /** LOGOS **/
 

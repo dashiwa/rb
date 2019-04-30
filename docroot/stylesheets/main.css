@@ -1,14 +1,14 @@
 /******************Global body tag******************************/
 /* line 3, ../sass/main.scss */
 body {
-  background: url("../img/back.png");
+  background: url("../img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* line 10, ../sass/main.scss */
 header .container {
-  background: url("../img/mid_top.png");
+  background: url("../img/block1.jpg");
   background-repeat: no-repeat;
 }
 
@@ -78,7 +78,7 @@ header .container {
 }
 /* line 88, ../sass/main.scss */
 .container .language ul li a.active {
-  color: #A94729;
+  color: #FAB03B;
 }
 /* line 93, ../sass/main.scss */
 .container .language ul li:first-child {
@@ -143,7 +143,7 @@ header .container {
 .container .middle-header .timer .countdown-row .countdown-section {
   height: 115px;
   width: 110px;
-  background-color: #D44A18;
+  background: linear-gradient(180deg, rgba(38, 41, 89, 0) 0%, #262959 100%);
   display: flex;
   flex-direction: column;
   float: left;
@@ -192,7 +192,7 @@ header .container {
 }
 /* line 214, ../sass/main.scss */
 .container .bottom-middle-header .mark {
-  background: url("../img/shape.png");
+  background: url("../img/Combined Shape.png");
   height: 80px;
   width: 55px;
   margin: auto;
@@ -765,34 +765,23 @@ main .bottom-footer-container .title, main .bottom-footer-container .email-first
 /** LOGOS **/
 /* line 820, ../sass/main.scss */
 .logos ul li a.fb {
-  background: url(../img/f.png);
-  width: 40px;
-  height: 40px;
+  background: url(../img/facebook-logo-button.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
   display: block;
   position: absolute;
-  right: 140px;
-  top: 6px;
+  right: 145px;
+  top: 20px;
 }
-/* line 832, ../sass/main.scss */
+/* line 833, ../sass/main.scss */
 .logos ul li a.inst {
-  background: url("../img/in.png");
-  width: 40px;
-  height: 40px;
+  background: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
   display: block;
   position: absolute;
   right: 185px;
-  top: 3px;
-}
-
-/** STATIC NAV BAR AND BUTTON **/
-@media (min-width: 1200px) {
-  /* line 848, ../sass/main.scss */
-  .fixed {
-    position: fixed;
-  }
-
-  /* line 851, ../sass/main.scss */
-  .bottom-top-container {
-    height: 830px;
-  }
+  top: 20px;
 }

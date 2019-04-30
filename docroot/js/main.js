@@ -61,12 +61,12 @@ if (window.location.pathname == '/eng/') {
 var nav_menu = $('.navbar-nav');
 var button_fixed = $('.ticket-button-wrapper');
 
-$(window).scroll(function() {
-    if (this.scrollY > 500) {
-        button_fixed.addClass("fixed");
-        nav_menu.addClass("fixed");
-    } else {
-        nav_menu.removeClass("fixed");
-        button_fixed.removeClass("fixed");
-    }
-});
+// $(window).scroll(function() {
+//     if (this.scrollY > 500) {
+//         button_fixed.addClass("fixed");
+//         nav_menu.addClass("fixed");
+//     } else {
+//         nav_menu.removeClass("fixed");
+//         button_fixed.removeClass("fixed");
+//     }
+// });

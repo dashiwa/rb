@@ -177,22 +177,29 @@ html body {
             height: 41px;
             width: 55px;
             color: #FFFFFF;
-            font-family: "Gotham Pro";
-            font-size: 46px;
             letter-spacing: 0.12px;
-            line-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: GothamPro;
+            font-size: 50px;
+            font-weight: bold;
           }
 
           .countdown-period {
             height: 12px;
             width: 42px;
             color: #FFFFFF;
-            font-family: "Gotham Pro";
-            font-size: 14px;
-            letter-spacing: 0.04px;
-            line-height: 13px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 15px;
+            text-align: center;
+            letter-spacing: 0.132353px;
+            font-family: Gotham Pro;
+            font-size: 14px;
+            line-height: 12px;
+            text-transform: uppercase;
           }
 
         }
@@ -1002,7 +1009,7 @@ main {
         display: block;
         position: absolute;
         right: 145px;
-        top: 20px;
+        top: 17px;
       }
     }
 
@@ -1015,7 +1022,7 @@ main {
         display: block;
         position: absolute;
         right: 185px;
-        top: 20px;
+        top: 17px;
       }
     }
   }

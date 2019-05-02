@@ -149,10 +149,11 @@ html body {
       font-size: 18px;
       font-weight: 500;
       letter-spacing: 0.05px;
-      line-height: 55px;
-      text-align: center;
       margin-top: 15px;
       margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .timer {

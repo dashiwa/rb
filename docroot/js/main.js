@@ -37,6 +37,10 @@ $(".tabs li").mouseenter(function () {
 
 });
 
+$(".tabs li").on('click', function (e) {
+   e.preventDefault();
+});
+
 // $('.single-item').slick({dots: true,arrows:true});
 
 

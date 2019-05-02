@@ -19,10 +19,18 @@ img {
   max-width: 100%;
 }
 
+.button {
+  a {
+    text-decoration: none;
+  }
+}
+
 /************************TOP NAVIGATION MENU*************************************/
 
 // Variables.
 $gotham_pro_font_family: "Gotham Pro", Arial, sans-serif;
+$font_medium: "Gotham Pro Medium", Arial, sans-serif;
+$font_light: "Gotham Pro Light", Arial, sans-serif;
 $medium_font_size: 16px;
 $medium_line_height: 16px;
 $white_color: #FFFFFF;
@@ -259,41 +267,124 @@ html body {
 main {
 
   .brand-middle {
-    padding-top: 100px;
+    padding: 89px 36px 140px 40px;
     margin-top: 10px;
-    background: url("../img/g_13.png");
+    background: url("../img/block2.jpg") 50% 0 no-repeat;
+    @include background-size(cover);
 
+    .counter-item {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 82px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
     .counter {
       color: #FFFFFF;
       font-family: "Gotham Pro";
       font-size: 90px;
       letter-spacing: 3.84px;
       line-height: 86px;
-      margin-left: 11%;
     }
 
     .strong {
+      margin-top: 21px;
       color: #FFFFFF;
       font-family: "Gotham Pro";
       font-size: 23px;
       letter-spacing: -0.04px;
       line-height: 23px;
-      margin-left: 11%;
       text-transform: uppercase;
     }
 
+    .bottom-content {
+      margin-top: 85px;
+      margin-left: -$grid_gap;
+      margin-right: -$grid_gap;
+
+      @media (min-width: 992px) {
+        display: flex;
+      }
+    }
+
+    $container_width: 1174px;
+    .content-column {
+      padding-left: $grid_gap;
+      padding-right: $grid_gap;
+
+      @media (min-width: 992px) {
+        flex: 1;
+      }
+    }
+    .image-column {
+      padding-left: $grid_gap;
+      padding-right: $grid_gap;
+
+      @media (min-width: 992px) {
+        $w: 374px + 2 * $grid_gap;
+        flex: 0 0 $w;
+        text-align: right;
+      }
+      @media (max-width: 991px) {
+        text-align: center;
+        max-width: 404px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
     .msg {
-      margin-top: 95px;
       color: #FFFFFF;
       font-family: "Gotham Pro";
       font-size: 24px;
       letter-spacing: 0.16px;
       line-height: 34px;
-      margin-left: 4%;
 
       p {
-        margin: 10px;
-        pdding: 10px;
+        margin-bottom: 34px;
+      }
+    }
+
+    .winner-cup {
+      margin-top: 13px;
+      $h: 312px;
+      height: $h;
+      max-height: $h;
+    }
+    .competition-logos {
+      margin-top: 34px;
+      background: linear-gradient(90deg, #CDDBE8 0%, #E2EAE9 100%);
+      padding: 6px 12px 5px;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+
+      .logo-item {
+        //display: inline-block;
+        flex: 1 1 auto;
+        vertical-align: middle;
+        padding-right: 12px;
+        margin-bottom: 10px;
+        text-align: left;
+
+        &:nth-child(2n) {
+          text-align: right;
+        }
+
+        &:nth-child(2n),
+        &:last-child {
+          padding-right: 0;
+        }
+
+        img {
+          max-width: 223px;
+          max-height: 86px;
+        }
       }
     }
   }
@@ -302,9 +393,12 @@ main {
 
   .middle-container {
     background: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 44px;
 
     .day_switcher {
-      padding-top: 80px;
+      padding-top: 90px;
       margin-top: 20px;
       margin-bottom: 50px;
 
@@ -313,24 +407,7 @@ main {
 
         li.active {
           background-color: #C9142E;
-
-          .title {
-            color: #FFFFFF;
-            font-family: "Gotham Pro";
-            font-size: 36px;
-            font-weight: 500;
-            letter-spacing: 0.2px;
-            line-height: 34px;
-          }
-
-          .desc {
-            color: #FFFFFF;
-            font-family: "Gotham Pro";
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 0.05px;
-            line-height: 17px;
-          }
+          color: #FFFFFF;
         }
 
         li {
@@ -339,21 +416,19 @@ main {
           flex-direction: column;
           padding: 20px;
           height: 110px;
+          cursor: pointer;
+          color: #fab03b;
 
           .title {
-            color: #000000;
-            font-family: "Gotham Pro";
+            font-family: $font_medium;
             font-size: 36px;
-            font-weight: 500;
             letter-spacing: 0.2px;
             line-height: 34px;
           }
 
           .desc {
-            color: #000000;
-            font-family: "Gotham Pro";
+            font-family: $font_medium;
             font-size: 18px;
-            font-weight: 500;
             letter-spacing: 0.05px;
             line-height: 17px;
           }
@@ -369,7 +444,7 @@ main {
 
   .table-wrapper {
     .first_day, .second_day {
-      height: 570px;
+      //height: 570px;
       overflow: hidden;
     }
 
@@ -383,10 +458,34 @@ main {
       font-size: 28px;
       letter-spacing: 0.07px;
       line-height: 26px;
+      border: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      &:nth-child(1) {
+        width: 100px;
+      }
+      &:nth-child(2) {
+        font-size: 22px;
+        text-transform: uppercase;
+      }
     }
 
+    tr {
+      border: 1px solid #F1F1F1;
+
+      &:nth-of-type(odd) {
+        background-color: #F1F1F1;
+      }
+    }
     tr:hover {
-      background-color: #FAB04F;
+      background-color: #C9142E;
+      border-color: #C9142E;
+      color: $white_color;
+
+      td {
+        color: $white_color;
+      }
     }
 
     .female, .male {
@@ -394,19 +493,19 @@ main {
     }
 
     .female {
-      color: #CF4817;
-      font-family: "Gotham Pro";
-      font-size: 28px;
-      letter-spacing: 0.07px;
-      line-height: 26px;
+      color: #FAB03B;
+    }
+    .male {
+      color: #245CA3;
     }
   }
 
   /***************************** DINAMO ****************************************/
 
   .middle-bottom-container {
+    margin-top: 20px;
     background: url("../img/g_14.png");
-    padding-top: 40px;
+    padding-top: 50px;
     height: 860px;
 
     .title-pl {
@@ -418,10 +517,11 @@ main {
     }
 
     .dinamo-block {
-      margin: 0 0 0 40px;
+      margin: 0 0 0 25px;
+      max-width: 770px;
 
       .title {
-        height: 54px;
+        //height: 54px;
         color: #FFFFFF;
         font-family: "Gotham Pro";
         font-size: 48px;
@@ -430,9 +530,10 @@ main {
       }
 
       .desc {
-        height: 68px;
+        margin-top: 13px;
+        //height: 68px;
         color: #FFFFFF;
-        font-family: "Gotham Pro";
+        font-family: $font_light;
         font-size: 24px;
         letter-spacing: 0.26px;
         line-height: 34px;
@@ -443,7 +544,7 @@ main {
 
     .tabs {
       margin-top: 130px;
-      margin-left: 45px;
+      margin-left: 25px;
 
       ul {
         list-style: none;
@@ -454,7 +555,7 @@ main {
         flex-direction: column;
 
         li.active {
-          background-color: #FAB04F;
+          background: transparent;
         }
 
         li {
@@ -464,7 +565,7 @@ main {
           border: 1px solid #FFFFFF;
           justify-content: center;
           align-items: center;
-          background: none;
+          background-color: #FAB04F;
 
           a {
             height: 16px;
@@ -474,6 +575,8 @@ main {
             font-weight: 500;
             letter-spacing: 0.05px;
             line-height: 17px;
+            text-transform: uppercase;
+            text-decoration: none;
           }
         }
       }
@@ -691,6 +794,7 @@ main {
     background: url("../img/r_25.png");
     margin-top: 20px;
     position: relative;
+    height: 500px;
 
     .city-label {
       height: 51px;
@@ -809,16 +913,26 @@ main {
 
   .bottom-footer-container {
     margin-top: 20px;
-    padding-top: 110px;
+    padding: 35px 40px 92px;
     background: white;
 
-    .title, .email-first, .email-second {
-      height: 160px;
+    .title {
       color: #000000;
       font-family: "Gotham Pro";
-      font-size: 40px;
-      letter-spacing: 0.11px;
-      line-height: 40px;
+      font-size: 50px;
+      letter-spacing: 0.132353px;
+      line-height: 50px;
+      margin-bottom: 22px;
+    }
+    .contacts-list {
+      .c-item {
+        font-size: 24px;
+        line-height: 40px;
+
+        a {
+          color: #235ca3;
+        }
+      }
     }
   }
 
@@ -896,6 +1010,7 @@ main {
       }
 
       .news-title {
+        font-family: $font_medium;
         font-size: 24px;
         line-height: 34px;
         margin-bottom: 5px;
@@ -973,7 +1088,7 @@ main {
       font-size: 24px;
       line-height: 28px;
       color: #262959;
-      font-family: "Gotham Pro Medium", sans-serif;
+      font-family: $font_medium;
       padding: 0 0 35px 46px;
       background: url(../img/group-title-line.png) no-repeat 0 35px;
     }

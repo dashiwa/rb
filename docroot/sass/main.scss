@@ -181,7 +181,7 @@ html body {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: GothamPro;
+            //font-family: GothamPro;
             font-size: 50px;
             font-weight: bold;
           }
@@ -196,7 +196,7 @@ html body {
             margin-top: 15px;
             text-align: center;
             letter-spacing: 0.132353px;
-            font-family: Gotham Pro;
+            //font-family: Gotham Pro;
             font-size: 14px;
             line-height: 12px;
             text-transform: uppercase;
@@ -807,12 +807,6 @@ main {
 
   /** END BOTTOM MIDDLE CONTAINER **/
 
-  .bottom-bottom-container {
-    margin-top: 20px;
-    height: 801px;
-    background-color: #ECECEC;
-  }
-
   .bottom-footer-container {
     margin-top: 20px;
     padding-top: 110px;
@@ -939,6 +933,87 @@ main {
 
         @media (min-width: 992px) {
           float: right;
+        }
+      }
+    }
+  }
+}
+
+#partners {
+  margin-top: 20px;
+  background-color: #F1F1F1;
+  padding: 48px 20px 52px;
+  text-align: center;
+
+  .partners-group {
+    width: 49%;
+    max-width: 512px;
+    padding-right: 12px;
+    margin-bottom: 25px;
+    text-align: left;
+
+    @media (min-width: 992px) {
+      display: inline-block;
+      vertical-align: top;
+
+      &:nth-child(3n+1) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .group-title {
+      font-size: 24px;
+      line-height: 28px;
+      color: #262959;
+      font-family: "Gotham Pro Medium", sans-serif;
+      padding: 0 0 35px 46px;
+      background: url(../img/group-title-line.png) no-repeat 0 35px;
+    }
+    .partners-list {
+      padding-left: 15px;
+      margin-top: -17px;
+
+      .partner-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        height: 60px;
+        background: $white_color;
+        @include border-radius(20px 0 20px 0);
+        text-align: center;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        &:nth-child(3n),
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media (min-width: 992px) and (max-width: 1100px) {
+          width: 138px;
+          margin-right: 5px;
+        }
+
+        &:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          max-height: 100%;
+          max-width: 90%;
         }
       }
     }

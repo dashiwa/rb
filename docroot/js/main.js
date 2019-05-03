@@ -1,13 +1,16 @@
-var newYear = new Date();
-
-newYear = new Date("9 September 2019");
-var countdown = $('#defaultCountdown').countdown({until: newYear});
+var $counter_el = $('#defaultCountdown');
+// Default date to count until.
+var count_until = "9 September 2019 19:00";
+// Read the date to count until.
+if ($counter_el.data('time')) {
+    count_until = $counter_el.data('time');
+}
+var count_until_date = new Date(count_until);
+var countdown = $counter_el.countdown({until: count_until_date});
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
-
-// $('#defaultCountdown').countdown({until: newYear});
 
 var first = $('.middle-bottom-container .img-list li.first');
 var second = $('.middle-bottom-container .img-list li.second');
@@ -41,7 +44,13 @@ $(".tabs li").on('click', function (e) {
    e.preventDefault();
 });
 
-// $('.single-item').slick({dots: true,arrows:true});
+$('.slider.single-item').slick({
+  infinite: true,
+  slidesToShow: 1,
+  //adaptiveHeight: true,
+  dots: true,
+  arrows:true
+});
 
 
 $('.day_switcher ul li').click(function () {

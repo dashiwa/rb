@@ -505,6 +505,7 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .container .middle-header .timer {
   display: flex;

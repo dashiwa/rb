@@ -877,6 +877,12 @@ main .middle-bottom-container .img-brand-middle ul.img-list .mark_n {
   background-color: #FAB04F;
   border-radius: 15px;
 }
+main .middle-bottom-container .img-brand-middle ul.img-list li .desc {
+  text-transform: uppercase;
+}
+main .middle-bottom-container .img-brand-middle ul.img-list li.first {
+  text-shadow: 1px 1px #000;
+}
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first {
   position: absolute;
   left: 425px;
@@ -894,7 +900,6 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first 
   line-height: 67px;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.first .desc {
-  height: 28px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 20px;
@@ -919,7 +924,6 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second
   line-height: 67px;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.second .desc {
-  height: 28px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 20px;
@@ -945,7 +949,6 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third 
   line-height: 67px;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.third span.desc {
-  height: 28px;
   width: 212px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
@@ -971,13 +974,15 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth
   line-height: 67px;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.first span.fourth span.desc {
-  height: 28px;
   width: 234px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
   font-size: 20px;
   letter-spacing: 0.05px;
   line-height: 28px;
+}
+main .middle-bottom-container .img-brand-middle ul.img-list li.second {
+  text-shadow: 1px 1px #000;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first {
   position: absolute;
@@ -986,6 +991,11 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first
   top: 444px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1080px) {
+  main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first {
+    left: 390px;
+  }
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first span.title {
   height: 62px;
@@ -997,7 +1007,6 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first
   line-height: 67px;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.first span.desc {
-  height: 28px;
   width: 221px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
@@ -1010,17 +1019,23 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.secon
   left: 690px;
   font-size: 40px;
   top: 415px;
+  width: 330px;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1080px) {
+  main .middle-bottom-container .img-brand-middle ul.img-list li.second span.second {
+    left: 612px;
+    width: 330px;
+  }
+}
 main .middle-bottom-container .img-brand-middle ul.img-list li.second span.second span.desc ul li {
   display: block;
-  width: 285px;
   color: #FFFFFF;
   font-family: "Gotham Pro";
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.05px;
-  line-height: 40px;
+  line-height: 33px;
   text-transform: uppercase;
 }
 main .middle-bottom-container .img-brand-middle ul.img-list li.third .mapouter {
@@ -1139,6 +1154,7 @@ main .bottom-top-container .carousel-itemq .slide-content .description {
 main .bottom-top-container .carousel-itemq .slide-content .description ul,
 main .bottom-top-container .carousel-itemq .slide-content .description p {
   margin-bottom: 34px;
+  text-shadow: 1px 1px #000;
 }
 main .bottom-top-container .carousel-itemq .slide-content .description.narrow {
   max-width: 540px;

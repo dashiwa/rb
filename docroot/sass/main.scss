@@ -43,6 +43,14 @@ img {
     @include border-radius(500px);
   }
 
+  &.btn-lg {
+    min-width: 250px;
+    line-height: 58px;
+    padding: 0 20px;
+    font-size: 18px;
+    letter-spacing: 0.0465642px;
+  }
+
   &.focus,
   &:focus {
     box-shadow: none;
@@ -586,10 +594,15 @@ main {
           height: 77px;
           width: 194px;
           display: flex;
-          border: 1px solid #FFFFFF;
+          border: 1px solid rgba($white_color, 0.5);
           justify-content: center;
           align-items: center;
-          background-color: #FAB04F;
+          background: #FAB03B;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
 
           a {
             color: #FFFFFF;
@@ -804,7 +817,18 @@ main {
           .mapouter {
             position: absolute;
             left: 325px;
-            top: 200px;
+            //top: 200px;
+            bottom: 60px;
+            height: 487px;
+            width: 60%;
+
+            iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
           }
         }
 

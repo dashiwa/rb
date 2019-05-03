@@ -11,7 +11,7 @@
 <!-- Custom styles for this template -->
 <link href="../stylesheets/style.css" rel="stylesheet">
 
-<body class="eng">
+<body id="scroll" class="eng">
 
 <header>
 
@@ -53,18 +53,18 @@
                 <div class="logos">
                     <ul>
                         <li>
-                            <a class="fb" href="#"></a>
+                            <a class="fb" href="https://www.facebook.com/The_Match_EUROPE_USA-404520917036043/" target="_blank"></a>
                         </li>
                         <li>
-                            <a class="inst" href="https://www.instagram.com/europe_usa_match/"></a>
+                            <a class="inst" href="https://www.instagram.com/europe_usa_match/" target="_blank"></a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="language">
                     <ul>
-                        <li><a class="ru active" href="/">Ру</a></li>
-                        <li><a class="eng" href="/eng">En</a></li>
+                        <li><a class="ru" href="/">Ру</a></li>
+                        <li><a class="eng active" href="/eng">En</a></li>
                     </ul>
                 </div>
 
@@ -85,11 +85,12 @@
                 </div>
 
                 <div class="ticket-button-wrapper col-lg-3 col-sm-12">
-                    <div class="ticket-button">TICKETS COMING SOON!</div>
+                    <div data-toggle="tooltip" title="THE GREATEST RIVALRY IN ATHLETICS HISTORY. BEGINS"  data-placement="top" class="ticket-button">TICKETS COMING SOON!</div>
+
                 </div>
 
 
-                <div id="defaultCountdown" class="timer offset-lg-2 col-lg-5 col-sm-12"></div>
+                <div id="defaultCountdown" class="timer offset-lg-2 col-lg-5 col-sm-12" data-time="9 September 2019 19:00"></div>
 
             </div>
 
@@ -111,8 +112,7 @@
                     <div class="mark"></div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="desc">National Olympic stadium “Dinamo” (Minsk, Belarus)
-                    </div>
+                    <div class="desc">National Olympic stadium “Dinamo” (Minsk, Belarus)</div>
                 </div>
             </div>
 
@@ -583,9 +583,9 @@
                 </li>
 
                 <li class="third">
-                    <div class="mapouter row">
-                        <div class="gmap_canvas col-lg-12">
-                            <iframe width="600" height="600" id="gmap_canvas"
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="1000" height="600" id="gmap_canvas"
                                     src="https://maps.google.com/maps?q=%D0%BC%D0%B8%D0%BD%D1%81%D0%BA%20%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
@@ -598,62 +598,77 @@
 
     </div><!-- END MIDDLE BOTTOM CONTAINER -->
 
-    <div class="bottom-top-container container">
-        <a name="city"></a>
-        <div class="city-label">
-            Minsk
-        </div>
+    <div id="city" class="bottom-top-container container">
+        <div class="slider single-item">
 
-        <div class="bottom-list">
+            <div class="carousel-itemq has-infographics">
+                <div class="slide-bg" style="background-image: url('../img/slide-1.jpg');"></div>
 
-            <div class="row">
+                <div class="slide-content">
+                    <h4 class="title">Minsk</h4>
+                    <div class="description narrow">
+                        <p>Minsk – столица и крупнейший город Беларуси, который все чаще становится площадкой для проведения глобальных событий в различных сферах, что положительно влияет на рост качества инфраструктуры города.</p>
+                    </div>
 
-                <div class="odd col-lg-1">
-                    <span class="title">650</span>
-                    <span class="desc">cultural objects</span>
+                    <ul class="slide-inforgraphics">
+                        <li class="infogr-item">
+                            <span class="number">650</span>
+                            <span class="text">культурных объектов</span>
+                        </li>
+                        <li class="infogr-item">
+                            <span class="number">88</span>
+                            <span class="text">гостиниц и хостелов</span>
+                        </li>
+                        <li class="infogr-item">
+                            <span class="number">700+</span>
+                            <span class="text">Ресторанов, кафе</span>
+                        </li>
+                        <li class="infogr-item">
+                            <span class="number">€0.27</span>
+                            <span class="text">Стоимость проезда</span>
+                        </li>
+                    </ul>
                 </div>
+            </div><!-- .carousel-itemq -->
 
-                <div class="chh col-lg-1">
-                    <span class="title">88</span>
-                    <span class="desc">hotels and hostels</span>
+            <div class="carousel-itemq">
+                <div class="slide-bg" style="background-image: url('../img/slide-2.jpg');"></div>
+
+                <div class="slide-content">
+                    <h4 class="title">Как добраться до Минска</h4>
+                    <div class="description middle">
+                        <p>Национальный аэропорт «Минск»:</p>
+
+                        <ul class="yellow-dotted">
+                            <li>За 3 часа можно добраться до Минска из любой точки Европы.</li>
+                            <li>Выполняет 60 прямых рейсов.</li>
+                            <li>€2 стоит проезд до Минска на маршрутном такси или автобусе.</li>
+                            <li>Транспорт ходит каждые 20-30 минут.</li>
+                            <li>Расстояние от аэропорта до Минска – 42 километра</li>
+                        </ul>
+                    </div>
                 </div>
+            </div><!-- .carousel-itemq -->
 
+            <div class="carousel-itemq">
+                <div class="slide-bg" style="background-image: url('../img/slide-3.jpg');"></div>
 
-                <div class="odd col-lg-1">
-                    <span class="title">650</span>
-                    <span class="desc">cultural objects</span>
+                <div class="slide-content">
+                    <h4 class="title">Безвизовый режим</h4>
+                    <div class="description">
+                        <ul class="yellow-dotted">
+                            <li>Установлен для граждан 74 стран на 30 дней с момента пересечения границы (главное условие – прибыть и улететь через Национальный аэропорт «Минск»).</li>
+                            <li>Туристу необходимо иметь: 1. действительный паспорт, 2. страховой полис на сумму не менее 10 тысяч евро, 3. €22 на каждый день пребывания.</li>
+                            <li>Общий срок нахождения в стране не должен превышать 90 дней в году.</li>
+                            <li>Иностранцы, которые планируют быть в Беларуси более 5 рабочих дней, регистрируются в департаменте по гражданству и миграции территориальных органов внутренних дел (в отелях, хостелах и санаториях эта процедура делается по умолчанию при заселении).</li>
+                        </ul>
+
+                        <div class="btn-wrap">
+                            <a href="http://mfa.gov.by/visa/freemove/aafab0a3d1cc05e9.html" target="_blank" class="btn btn-primary btn-rounded">Read more</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="chh col-lg-1">
-                    <span class="title">88</span>
-                    <span class="desc">hotels and hostels</span>
-                </div>
-
-
-                <div class="odd col-lg-1">
-                    <span class="title">650</span>
-                    <span class="desc">cultural objects</span>
-                </div>
-
-                <div class="chh col-lg-1">
-                    <span class="title">88</span>
-                    <span class="desc">hotels and hostels</span>
-                </div>
-
-
-                <div class="odd col-lg-1">
-                    <span class="title">650</span>
-                    <span class="desc">cultural objects</span>
-                </div>
-
-                <div class="chh col-lg-1">
-                    <span class="title">88</span>
-                    <span class="desc">hotels and hostels</span>
-                </div>
-
-            </div>
-
-
+            </div><!-- .carousel-itemq -->
         </div>
     </div><!--END BOTTOM TOP CONTAINER -->
 
@@ -666,26 +681,30 @@
             <div class="desc">
                 If you want to become a part of this grand international event, please register following the link below and we will contact you.
             </div>
-            <div class="button"><a href="https://docs.google.com/forms/d/19eDaXA-Td97Rf72Gbu6ij6xhiQhXSwGUtBYOfTwd6Zg/viewform?edit_requested=true" target="_blank">become a volunteer</a></div>
+            <a class="btn btn-primary btn-rounded btn-lg" href="https://docs.google.com/forms/d/19eDaXA-Td97Rf72Gbu6ij6xhiQhXSwGUtBYOfTwd6Zg/viewform?edit_requested=true" target="_blank">become a volunteer</a>
         </div>
 
     </div><!--END BOTTOM MIDDLE CONTAINER -->
 
     <div id="partners" class="container">
         <div class="partners-wrapper">
+            <!--
             <div class="partners-group">
                 <h4 class="group-title">General Partner</h4>
                 <div class="partners-list">
                     <div class="partner-item" title="Partner"><img src="../img/shape.png" alt=""></div>
                 </div>
             </div>
+            -->
 
+            <!--
             <div class="partners-group">
                 <h4 class="group-title">Official Partners</h4>
                 <div class="partners-list">
                     <div class="partner-item" title="Partner"><img src="../img/shape.png" alt=""></div>
                 </div>
             </div>
+            -->
 
             <div class="partners-group">
                 <h4 class="group-title">Broadcast Partner</h4>
@@ -710,12 +729,14 @@
                 </div>
             </div>
 
+            <!--
             <div class="partners-group">
                 <h4 class="group-title">Media Partners</h4>
                 <div class="partners-list">
                     <div class="partner-item" title="Partner"><img src="../img/shape.png" alt=""></div>
                 </div>
             </div>
+            -->
         </div>
     </div><!-- END #partners -->
 
@@ -723,7 +744,7 @@
         <h2 class="block-title">Media</h2>
         <div class="row media-columns">
             <div class="image-column col-lg-4">
-                <img src="../img/blank.png" alt="Event photo">
+                <img src="../img/logo-plus-dates.png" alt="The match Europe v USA">
             </div>
             <div class="video-column col-lg-8">
                 <iframe width="694" height="420" src="https://www.youtube.com/embed/KnDWt6srtNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -736,6 +757,7 @@
 
         <div class="row">
             <div class="contacts-list col-lg-12">
+                <div class="c-item"><span class="label">General coordination:</span> <a class="value" href="mailto:aliaksandr.buthusaim@gmail.com">aliaksandr.buthusaim@gmail.com</a></div>
                 <div class="c-item"><span class="label">For partners and sponsors:</span> <a class="value" href="mailto:partnersmatch2019@gmail.com">partnersmatch2019@gmail.com</a></div>
                 <div class="c-item"><span class="label">Media:</span> <a class="value" href="mailto:partnersmatch2019@gmail.com">mediamatch2019@gmail.com</a></div>
             </div>
@@ -744,18 +766,21 @@
 
 
 </main>
+
 </body>
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="../bootstrap/js/jquery.js"></script>
-<script src="../bootstrap/js/plugin.js"></script>
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="../bootstrap/js/popper.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
 <script src="../bootstrap/js/holder.min.js"></script>
+<script src="../bootstrap/js/plugin.js"></script>
 <script src="../bootstrap/js/countdown.js"></script>
+<script src="../bootstrap/js/jquery.countdown-ru.js"></script>
+<script src="../lib/slick/slick.min.js"></script>
 <script src="../js/main.js"></script>
 
 </html>

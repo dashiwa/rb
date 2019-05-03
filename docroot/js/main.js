@@ -1,12 +1,33 @@
-var $counter_el = $('#defaultCountdown');
-// Default date to count until.
-var count_until = "9 September 2019 19:00";
-// Read the date to count until.
-if ($counter_el.data('time')) {
-    count_until = $counter_el.data('time');
+
+$(document).ready(function () {
+    var $counter_el = $('#defaultCountdown');
+    // Default date to count until.
+    var count_until = "9 September 2019 19:00";
+    // Read the date to count until.
+    if ($counter_el.data('time')) {
+        count_until = $counter_el.data('time');
+    }
+    var count_until_date = new Date(count_until);
+    var countdown = $counter_el.countdown({
+        until: count_until_date,
+        serverSync: serverTime
+    });
+});
+
+function serverTime() {
+    var time = null;
+    $.ajax({
+        url: '../time_sync/serverTime.php',
+        async: false, dataType: 'text',
+        success: function (text) {
+            time = new Date(text);
+        },
+        error: function (http, message, exc) {
+            time = new Date();
+        }
+    });
+    return time;
 }
-var count_until_date = new Date(count_until);
-var countdown = $counter_el.countdown({until: count_until_date});
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
@@ -45,9 +66,8 @@ $(".tabs li").on('click', function (e) {
 });
 
 $('.slider.single-item').slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 1,
-  //adaptiveHeight: true,
   dots: true,
   arrows:true
 });

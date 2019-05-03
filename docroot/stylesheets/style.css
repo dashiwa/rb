@@ -384,6 +384,13 @@ img {
   -webkit-border-radius: 500px;
   border-radius: 500px;
 }
+.btn.btn-lg {
+  min-width: 250px;
+  line-height: 58px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 0.0465642px;
+}
 .btn.focus, .btn:focus {
   box-shadow: none;
 }
@@ -835,10 +842,14 @@ main .middle-bottom-container .tabs ul li {
   height: 77px;
   width: 194px;
   display: flex;
-  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   justify-content: center;
   align-items: center;
-  background-color: #FAB04F;
+  background: #FAB03B;
+  margin-bottom: 10px;
+}
+main .middle-bottom-container .tabs ul li:last-child {
+  margin-bottom: 0;
 }
 main .middle-bottom-container .tabs ul li a {
   color: #FFFFFF;
@@ -1015,7 +1026,16 @@ main .middle-bottom-container .img-brand-middle ul.img-list li.second span.secon
 main .middle-bottom-container .img-brand-middle ul.img-list li.third .mapouter {
   position: absolute;
   left: 325px;
-  top: 200px;
+  bottom: 60px;
+  height: 487px;
+  width: 60%;
+}
+main .middle-bottom-container .img-brand-middle ul.img-list li.third .mapouter iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 main .bottom-top-container {
   margin-top: 20px;

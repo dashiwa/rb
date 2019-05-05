@@ -354,7 +354,7 @@ body {
 }
 @media (min-width: 1240px) {
   body {
-    background: url("../img/bg.jpg");
+    background-image: url("../img/bg.jpg");
   }
 }
 

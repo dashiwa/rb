@@ -1,35 +1,35 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gotham Pro";
-  src: url('/fonts/GothaProReg.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProReg.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Black";
-  src: url('/fonts/GothaProBla.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProBla.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Light";
-  src: url('/fonts/GothaProLig.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProLig.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Medium";
-  src: url('/fonts/GothaProMed.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProMed.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Light Italic";
-  src: url('/fonts/GothaProLigIta.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProLigIta.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Bold";
-  src: url('/fonts/GothaProBol.woff?1556548390') format('woff');
+  src: url('/fonts/GothaProBol.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "GothamPro-MediumItalic";
-  src: url('/fonts/GothamProMediumItalic.woff?1556548390') format('woff');
+  src: url('/fonts/GothamProMediumItalic.woff?1557160043') format('woff');
 }
 @font-face {
   font-family: "icons";
-  src: url('/fonts/icons.woff?1556864864') format('woff');
+  src: url('/fonts/icons.woff?1557160043') format('woff');
 }
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -517,6 +517,7 @@ html body {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .container .middle-header .timer {
   display: flex;

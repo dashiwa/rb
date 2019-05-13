@@ -1394,11 +1394,12 @@ ul.yellow-dotted {
   }
 
   .top-partners + .bottom-partners {
-    border-top: 3px solid #000000;
+    border-top: 1px solid #000000;
   }
 
   .bottom-partners {
 
+    background: $white_color;
     padding: 26px 40px 6px;
 
     .competition-logos {

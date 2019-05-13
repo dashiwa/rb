@@ -1,35 +1,35 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gotham Pro";
-  src: url('/fonts/GothaProReg.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProReg.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Black";
-  src: url('/fonts/GothaProBla.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProBla.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Light";
-  src: url('/fonts/GothaProLig.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProLig.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Medium";
-  src: url('/fonts/GothaProMed.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProMed.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Light Italic";
-  src: url('/fonts/GothaProLigIta.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProLigIta.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "Gotham Pro Bold";
-  src: url('/fonts/GothaProBol.woff?1557160043') format('woff');
+  src: url('/fonts/GothaProBol.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "GothamPro-MediumItalic";
-  src: url('/fonts/GothamProMediumItalic.woff?1557160043') format('woff');
+  src: url('/fonts/GothamProMediumItalic.woff?1556548390') format('woff');
 }
 @font-face {
   font-family: "icons";
-  src: url('/fonts/icons.woff?1557160043') format('woff');
+  src: url('/fonts/icons.woff?1556864864') format('woff');
 }
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -1509,9 +1509,10 @@ ul.yellow-dotted li:before {
   margin-bottom: 15px;
 }
 #partners .top-partners + .bottom-partners {
-  border-top: 3px solid #000000;
+  border-top: 1px solid #000000;
 }
 #partners .bottom-partners {
+  background: #FFFFFF;
   padding: 26px 40px 6px;
 }
 #partners .bottom-partners .competition-logos {
